@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "headline": "Sitios Web Personalizados en Puerto Rico",
+    "subheadline": "Totalmente bilingües, bellamente diseñados y listos para SEO.",
+    "cta": "Solicita tu Cotización Gratis"
+  },
+  "about": {
+    "title": "Sobre Nuvana",
+    "text": "Nuvana crea sitios web impresionantes y personalizados para negocios de todos los tamaños e industrias. Potenciamos tu marca con soluciones expertas de diseño web y SEO adaptadas a tu visión única. Como equipo totalmente bilingüe, estamos equipados para ayudarte a alcanzar diversos mercados y lograr tus objetivos digitales."
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "items": [
+      { "title": "Diseño Web Personalizado", "desc": "Sitios únicos y modernos adaptados a tu marca." },
+      { "title": "Optimización SEO", "desc": "Posiciónate más alto y sé encontrado por tus clientes." },
+      { "title": "Hosting y Mantenimiento", "desc": "Alojamiento rápido, seguro y soporte continuo." },
+      { "title": "Sitios Responsivos y Bilingües", "desc": "Experiencia perfecta en inglés y español." }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Por Qué Elegirnos",
+    "reasons": [
+      {
+        "title": "Experiencia en Sitios Web",
+        "desc": "Entendemos lo que hace efectivo a un sitio web, creando diseños que atraen a los visitantes y los convierten en clientes."
+      },
+      {
+        "title": "Excelencia Bilingüe",
+        "desc": "Sitios web totalmente bilingües que cambian sin problemas entre inglés y español para un alcance máximo."
+      },
+      {
+        "title": "Soluciones Personalizadas",
+        "desc": "Cada sitio web se construye desde cero para adaptarse a la identidad única de tu marca y objetivos de negocio."
+      },
+      {
+        "title": "Soporte Continuo",
+        "desc": "No solo construimos y nos vamos - proporcionamos soporte continuo para asegurar que tu sitio web evolucione con tu negocio."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Nuestro Trabajo",
+    "sites": [
+      {
+        "name": "Multi Electric Supply",
+        "desc": "Sitio web para un distribuidor líder de suministros eléctricos en Puerto Rico.",
+        "url": "https://www.multielectricsupply.com/",
+        "img": "/images/MULTI ELECTRCI LOGO_LE_upscale_balanced_x4.jpg"
+      },
+      {
+        "name": "PR Decompression Centers",
+        "desc": "Sitio médico para la clínica quiropráctica y de descompresión más grande de Puerto Rico.",
+        "url": "https://www.prdecompressioncenters.com/en",
+        "img": "/images/pr-decompression-centers-logo.png"
+      }
+    ]
+  },
+  "quote": {
+    "title": "Solicita una Cotización Gratis",
+    "fields": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "business": "Tipo de Negocio",
+      "budget": "Presupuesto",
+      "language": "Idioma Preferido",
+      "goals": "Objetivos del Sitio Web"
+    },
+    "submit": "Enviar Solicitud"
+  },
+  "footer": {
+    "contact": "Contacto",
+    "company": "Nuvana",
+    "address": "San Juan, Puerto Rico",
+    "email": "nurvanatec@gmail.com",
+    "phone": "+1 (787) 123-4567"
+  }
+}

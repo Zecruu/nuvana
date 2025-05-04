@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #10101a;
+  color: #f3f3f7;
+}
+
+.drop-shadow-neon {
+  text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+}
