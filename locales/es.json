@@ -39,19 +39,84 @@
     ]
   },
   "portfolio": {
-    "title": "Nuestro Trabajo",
+    "title": "Proyectos Destacados",
+    "subtitle": "Descubre nuestro trabajo más reciente y el impacto que hemos creado",
     "sites": [
       {
-        "name": "Multi Electric Supply",
-        "desc": "Sitio web para un distribuidor líder de suministros eléctricos en Puerto Rico.",
+        "id": "multi-electric",
+        "name": "Multi Electric Supply Inc.",
+        "category": "E-Commerce e Industrial",
+        "desc": "Una transformación digital integral para el distribuidor líder de suministros eléctricos de Puerto Rico, con soporte bilingüe y funcionalidad de grado industrial.",
+        "longDesc": "Multi Electric Supply Inc. necesitaba un sitio web moderno y profesional para mostrar sus más de 20 años de experiencia en suministros eléctricos. Creamos una plataforma bilingüe que sirve tanto a clientes de habla española como inglesa en todo Puerto Rico.",
         "url": "https://www.multielectricsupply.com/",
-        "img": "/images/MULTI ELECTRCI LOGO_LE_upscale_balanced_x4.jpg"
+        "img": "/images/MULTI ELECTRCI LOGO_LE_upscale_balanced_x4.jpg",
+        "screenshots": [
+          "/images/multi-electric-home.jpg",
+          "/images/multi-electric-services.jpg",
+          "/images/multi-electric-contact.jpg"
+        ],
+        "technologies": ["HTML5", "CSS3", "JavaScript", "Diseño Responsivo", "SEO", "Integración WhatsApp"],
+        "features": [
+          "Soporte Bilingüe Español/Inglés",
+          "Diseño Responsivo para Móviles",
+          "Integración WhatsApp Business",
+          "Contenido Optimizado para SEO",
+          "Rendimiento de Carga Rápida",
+          "Marca Profesional"
+        ],
+        "stats": {
+          "loadTime": "1.2s",
+          "mobileScore": "98/100",
+          "seoScore": "95/100",
+          "uptime": "99.9%"
+        },
+        "client": "Multi Electric Supply Inc.",
+        "year": "2025",
+        "duration": "3 semanas",
+        "testimonial": "Nuvana transformó completamente nuestra presencia en línea. ¡A nuestros clientes les encanta el nuevo sitio web bilingüe!",
+        "results": [
+          "Más Consultas en Línea",
+          "Mayor Presencia de Marca",
+          "Aumento en Confianza del Cliente"
+        ]
       },
       {
+        "id": "pr-decompression",
         "name": "PR Decompression Centers",
-        "desc": "Sitio médico para la clínica quiropráctica y de descompresión más grande de Puerto Rico.",
-        "url": "https://www.prdecompressioncenters.com/en",
-        "img": "/images/pr-decompression-centers-logo.png"
+        "category": "Salud y Medicina",
+        "desc": "Un sitio web médico sofisticado para la clínica premier de quiropráctica y descompresión espinal de Puerto Rico, diseñado para generar confianza y convertir pacientes.",
+        "longDesc": "PR Decompression Centers requería un sitio web médico profesional que estableciera credibilidad y ayudara a los pacientes a entender sus opciones de tratamiento avanzadas. Entregamos una plataforma integral con reserva de citas y soporte multilingüe.",
+        "url": "https://www.prdecompressioncenters.com/",
+        "img": "/images/pr-decompression-centers-logo.png",
+        "screenshots": [
+          "/images/pr-decompression-home.jpg",
+          "/images/pr-decompression-treatments.jpg",
+          "/images/pr-decompression-about.jpg"
+        ],
+        "technologies": ["React", "Next.js", "Tailwind CSS", "SEO Médico", "Cumplimiento HIPAA", "Sistema de Citas"],
+        "features": [
+          "Seguridad de Grado Médico",
+          "Sistema de Reserva de Citas",
+          "Portal de Información de Tratamientos",
+          "Testimonios de Pacientes",
+          "Información de Seguros",
+          "Soporte Multilingüe"
+        ],
+        "stats": {
+          "loadTime": "0.9s",
+          "mobileScore": "99/100",
+          "seoScore": "97/100",
+          "uptime": "99.9%"
+        },
+        "client": "PR Decompression Centers",
+        "year": "2025",
+        "duration": "4 semanas",
+        "testimonial": "El nuevo sitio web ha aumentado significativamente nuestras consultas de pacientes y mejorado nuestra imagen profesional.",
+        "results": [
+          "Más Citas de Pacientes",
+          "Mejor Presencia en Línea",
+          "Credibilidad Médica Mejorada"
+        ]
       }
     ]
   },

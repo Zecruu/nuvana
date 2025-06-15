@@ -29,7 +29,7 @@ export default function QuoteForm() {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
     >
-      <h2 className="text-3xl font-bold mb-6 text-neon">{t.quote.title}</h2>
+      <h2 className="text-3xl font-bold mb-6 text-primary">{t.quote.title}</h2>
       {sent ? (
         <p className="text-green-400">Thank you! We’ll be in touch soon.</p>
       ) : (
@@ -69,7 +69,14 @@ export default function QuoteForm() {
             <label htmlFor="goals" className="block text-sm font-medium text-gray-300 mb-1">{t.quote.fields.goals}</label>
             <textarea id="goals" name="goals" placeholder={t.quote.fields.goals} required className="w-full p-2 rounded bg-gray-800 text-white" rows="4" />
           </div>
-          <button type="submit" className="w-full py-3 bg-neon text-black font-bold rounded hover:scale-105 transition">{t.quote.submit}</button>
+          <motion.button
+            type="submit"
+            className="w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg hover:shadow-primary-lg transition-all"
+            whileHover={{ scale: 1.02, y: -2 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            {t.quote.submit}
+          </motion.button>
           {error && <p className="text-red-400">{error}</p>}
         </form>
       )}

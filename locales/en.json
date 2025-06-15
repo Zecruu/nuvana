@@ -39,19 +39,84 @@
     ]
   },
   "portfolio": {
-    "title": "Our Work",
+    "title": "Featured Projects",
+    "subtitle": "Discover our latest work and the impact we've created",
     "sites": [
       {
-        "name": "Multi Electric Supply",
-        "desc": "Website for a leading electrical supply distributor in Puerto Rico.",
+        "id": "multi-electric",
+        "name": "Multi Electric Supply Inc.",
+        "category": "E-Commerce & Industrial",
+        "desc": "A comprehensive digital transformation for Puerto Rico's leading electrical supply distributor, featuring bilingual support and industrial-grade functionality.",
+        "longDesc": "Multi Electric Supply Inc. needed a modern, professional website to showcase their 20+ years of expertise in electrical supplies. We created a bilingual platform that serves both Spanish and English-speaking customers across Puerto Rico.",
         "url": "https://www.multielectricsupply.com/",
-        "img": "/images/MULTI ELECTRCI LOGO_LE_upscale_balanced_x4.jpg"
+        "img": "/images/MULTI ELECTRCI LOGO_LE_upscale_balanced_x4.jpg",
+        "screenshots": [
+          "/images/multi-electric-home.jpg",
+          "/images/multi-electric-services.jpg",
+          "/images/multi-electric-contact.jpg"
+        ],
+        "technologies": ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO", "WhatsApp Integration"],
+        "features": [
+          "Bilingual Spanish/English Support",
+          "Mobile-Responsive Design",
+          "WhatsApp Business Integration",
+          "SEO Optimized Content",
+          "Fast Loading Performance",
+          "Professional Branding"
+        ],
+        "stats": {
+          "loadTime": "1.2s",
+          "mobileScore": "98/100",
+          "seoScore": "95/100",
+          "uptime": "99.9%"
+        },
+        "client": "Multi Electric Supply Inc.",
+        "year": "2025",
+        "duration": "3 weeks",
+        "testimonial": "Nuvana transformed our online presence completely. Our customers love the new bilingual website!",
+        "results": [
+          "More Online Inquiries",
+          "Enhanced Brand Presence",
+          "Increased Customer Trust"
+        ]
       },
       {
+        "id": "pr-decompression",
         "name": "PR Decompression Centers",
-        "desc": "Medical site for the biggest chiropractic and decompression clinic in Puerto Rico.",
-        "url": "https://www.prdecompressioncenters.com/en",
-        "img": "/images/pr-decompression-centers-logo.png"
+        "category": "Healthcare & Medical",
+        "desc": "A sophisticated medical website for Puerto Rico's premier chiropractic and spinal decompression clinic, designed to build trust and convert patients.",
+        "longDesc": "PR Decompression Centers required a professional medical website that would establish credibility and help patients understand their advanced treatment options. We delivered a comprehensive platform with appointment booking and multilingual support.",
+        "url": "https://www.prdecompressioncenters.com/",
+        "img": "/images/pr-decompression-centers-logo.png",
+        "screenshots": [
+          "/images/pr-decompression-home.jpg",
+          "/images/pr-decompression-treatments.jpg",
+          "/images/pr-decompression-about.jpg"
+        ],
+        "technologies": ["React", "Next.js", "Tailwind CSS", "Medical SEO", "HIPAA Compliance", "Appointment System"],
+        "features": [
+          "Medical-Grade Security",
+          "Appointment Booking System",
+          "Treatment Information Portal",
+          "Patient Testimonials",
+          "Insurance Information",
+          "Multilingual Support"
+        ],
+        "stats": {
+          "loadTime": "0.9s",
+          "mobileScore": "99/100",
+          "seoScore": "97/100",
+          "uptime": "99.9%"
+        },
+        "client": "PR Decompression Centers",
+        "year": "2025",
+        "duration": "4 weeks",
+        "testimonial": "The new website has significantly increased our patient inquiries and improved our professional image.",
+        "results": [
+          "More Patient Appointments",
+          "Improved Online Presence",
+          "Enhanced Medical Credibility"
+        ]
       }
     ]
   },

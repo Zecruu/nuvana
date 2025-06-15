@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Services from '../components/Services'
 import Portfolio from '../components/Portfolio'
+import Testimonials from '../components/Testimonials'
 import WhyChooseUs from '../components/WhyChooseUs'
 import QuoteForm from '../components/QuoteForm'
 import Footer from '../components/Footer'
@@ -39,21 +40,33 @@ export default function Home() {
           })
         }} />
       </Head>
-      <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white">
-        <header className="flex justify-between items-center p-6">
-          <div className="flex items-center">
-            <img src="/images/Nuvana Logo.jpg" alt="Nuvana Logo" className="h-10 w-10 mr-3" />
-            <span className="text-2xl font-bold text-neon">Nuvana</span>
+      <div className="min-h-screen bg-dark-bg text-white relative overflow-x-hidden">
+        {/* Fixed Header */}
+        <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-white/10">
+          <div className="flex justify-between items-center p-6 max-w-7xl mx-auto">
+            <div className="flex items-center">
+              <img src="/images/Nuvana Logo.jpg" alt="Nuvana Logo" className="h-10 w-10 mr-3 rounded-lg" />
+              <span className="text-2xl font-cyber font-bold gradient-text">Nuvana</span>
+            </div>
+            <LanguageToggle />
           </div>
-          <LanguageToggle />
         </header>
-        <main>
+
+        {/* Main Content */}
+        <main className="pt-20">
           <Hero />
-          <About />
+          <div id="about">
+            <About />
+          </div>
           <Services />
-          <Portfolio />
+          <div id="portfolio">
+            <Portfolio />
+          </div>
+          <Testimonials />
           <WhyChooseUs />
-          <QuoteForm />
+          <div id="quote">
+            <QuoteForm />
+          </div>
         </main>
         <Footer />
       </div>
