@@ -43,7 +43,7 @@ export default function Home() {
 
         {/* Hreflang for multilingual SEO */}
         <link rel="alternate" hrefLang="en" href="https://nuvana.com" />
-        <link rel="alternate" hrefLang="es" href="https://nuvana.com/es" />
+        <link rel="alternate" hrefLang="es" href="https://nuvana.com/espanol" />
         <link rel="alternate" hrefLang="x-default" href="https://nuvana.com" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({

@@ -9,12 +9,7 @@ const nextConfig = {
     formats: ['image/webp', 'image/avif'],
   },
   
-  // Internationalization
-  i18n: {
-    locales: ['en', 'es'],
-    defaultLocale: 'en',
-    localeDetection: true,
-  },
+  // Remove i18n config to avoid routing conflicts
   
   // Headers for SEO and security
   async headers() {
@@ -99,7 +94,6 @@ const nextConfig = {
   
   // Experimental features for performance
   experimental: {
-    optimizeCss: true,
     scrollRestoration: true,
   },
   

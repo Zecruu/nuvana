@@ -11,7 +11,7 @@ function generateSiteMap() {
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}" />
-    <xhtml:link rel="alternate" hreflang="es" href="${baseUrl}/es" />
+    <xhtml:link rel="alternate" hreflang="es" href="${baseUrl}/espanol" />
   </url>
   <url>
     <loc>${baseUrl}/services</loc>
@@ -19,7 +19,7 @@ function generateSiteMap() {
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/services" />
-    <xhtml:link rel="alternate" hreflang="es" href="${baseUrl}/es/servicios" />
+    <xhtml:link rel="alternate" hreflang="es" href="${baseUrl}/espanol" />
   </url>
   <url>
     <loc>${baseUrl}/portfolio</loc>
