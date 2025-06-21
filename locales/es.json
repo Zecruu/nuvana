@@ -1,40 +1,40 @@
 {
   "hero": {
-    "headline": "Sitios Web Personalizados en Puerto Rico",
-    "subheadline": "Totalmente bilingües, bellamente diseñados y listos para SEO.",
-    "cta": "Solicita tu Cotización Gratis"
+    "headline": "Diseño y Desarrollo Web Profesional en Puerto Rico",
+    "subheadline": "Sitios web personalizados bilingües, soluciones de comercio electrónico y optimización SEO. Lleva tu negocio online con servicios expertos de diseño web.",
+    "cta": "Solicita tu Cotización Gratuita"
   },
   "about": {
-    "title": "Sobre Nuvana",
-    "text": "Nuvana crea sitios web impresionantes y personalizados para negocios de todos los tamaños e industrias. Potenciamos tu marca con soluciones expertas de diseño web y SEO adaptadas a tu visión única. Como equipo totalmente bilingüe, estamos equipados para ayudarte a alcanzar diversos mercados y lograr tus objetivos digitales."
+    "title": "Empresa Líder en Diseño Web en Puerto Rico",
+    "text": "Nuvana es la empresa premier de diseño y desarrollo web en Puerto Rico. Nos especializamos en crear sitios web personalizados bilingües, plataformas de comercio electrónico y soluciones optimizadas para SEO para negocios de todas las industrias. Nuestro equipo experto combina desarrollo web de vanguardia con marketing digital estratégico para ayudar a tu negocio a triunfar en línea."
   },
   "services": {
-    "title": "Nuestros Servicios",
+    "title": "Servicios Profesionales de Diseño Web",
     "items": [
-      { "title": "Diseño Web Personalizado", "desc": "Sitios únicos y modernos adaptados a tu marca." },
-      { "title": "Optimización SEO", "desc": "Posiciónate más alto y sé encontrado por tus clientes." },
-      { "title": "Hosting y Mantenimiento", "desc": "Alojamiento rápido, seguro y soporte continuo." },
-      { "title": "Sitios Responsivos y Bilingües", "desc": "Experiencia perfecta en inglés y español." }
+      { "title": "Desarrollo de Sitios Web Personalizados", "desc": "Diseño y desarrollo web profesional personalizado para las necesidades de tu negocio e identidad de marca." },
+      { "title": "Desarrollo de Tiendas Online", "desc": "Desarrollo completo de tiendas en línea con procesamiento de pagos, gestión de inventario y optimización móvil." },
+      { "title": "SEO y Marketing Digital", "desc": "Optimización para motores de búsqueda y estrategias de marketing digital para aumentar tu visibilidad online y generar tráfico." },
+      { "title": "Soluciones Web Bilingües", "desc": "Desarrollo experto de sitios web bilingües en inglés y español para alcanzar mercados más amplios en Puerto Rico y más allá." }
     ]
   },
   "whyChooseUs": {
-    "title": "Por Qué Elegirnos",
+    "title": "Por Qué Elegir Nuvana para tu Diseño Web",
     "reasons": [
       {
-        "title": "Experiencia en Sitios Web",
-        "desc": "Entendemos lo que hace efectivo a un sitio web, creando diseños que atraen a los visitantes y los convierten en clientes."
+        "title": "Equipo Experto en Desarrollo Web",
+        "desc": "Nuestros desarrolladores web y diseñadores experimentados crean sitios web de alto rendimiento que generan resultados y aumentan las conversiones para tu negocio."
       },
       {
-        "title": "Excelencia Bilingüe",
-        "desc": "Sitios web totalmente bilingües que cambian sin problemas entre inglés y español para un alcance máximo."
+        "title": "Especialistas en Sitios Web Bilingües",
+        "desc": "Especializados en crear sitios web completamente bilingües que sirven sin problemas tanto a clientes de habla inglesa como española en Puerto Rico y América Latina."
       },
       {
-        "title": "Soluciones Personalizadas",
-        "desc": "Cada sitio web se construye desde cero para adaptarse a la identidad única de tu marca y objetivos de negocio."
+        "title": "Soluciones Web Personalizadas",
+        "desc": "Cada sitio web se construye a medida desde cero para reflejar tu identidad de marca, cumplir tus objetivos comerciales y proporcionar una experiencia de usuario excepcional."
       },
       {
-        "title": "Soporte Continuo",
-        "desc": "No solo construimos y nos vamos - proporcionamos soporte continuo para asegurar que tu sitio web evolucione con tu negocio."
+        "title": "Soporte Completo de Sitios Web",
+        "desc": "Mantenimiento integral de sitios web, hosting, actualizaciones de seguridad y optimización continua para asegurar que tu sitio web siga funcionando al máximo."
       }
     ]
   },

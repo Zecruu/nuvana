@@ -11,64 +11,65 @@ import Blog from '../components/Blog'
 import QuoteForm from '../components/QuoteForm'
 import Footer from '../components/Footer'
 
-export default function Home() {
+export default function SpanishHome() {
   const { t } = useLanguage()
   return (
     <>
       <Head>
-        <title>Website Design Puerto Rico | Custom Web Development Services | Nuvana</title>
-        <meta name="description" content="Professional website design and development in Puerto Rico. Custom bilingual websites, e-commerce, SEO optimization. Get your business online with Nuvana's expert web design services." />
-        <meta name="keywords" content="website design Puerto Rico, web development Puerto Rico, custom websites, bilingual web design, e-commerce development, SEO services Puerto Rico, responsive web design, website builder Puerto Rico, diseño web Puerto Rico, desarrollo web, sitios web personalizados" />
+        <title>Diseño Web Puerto Rico | Desarrollo de Sitios Web Personalizados | Nuvana</title>
+        <meta name="description" content="Diseño web profesional y desarrollo en Puerto Rico. Sitios web personalizados bilingües, tiendas online, optimización SEO. Lleva tu negocio online con los servicios expertos de diseño web de Nuvana." />
+        <meta name="keywords" content="diseño web Puerto Rico, desarrollo web Puerto Rico, sitios web personalizados, diseño web bilingüe, desarrollo ecommerce, servicios SEO Puerto Rico, diseño web responsivo, creador de sitios web Puerto Rico, website design Puerto Rico, desarrollo sitios web" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="author" content="Nuvana Web Design Studio" />
+        <meta name="author" content="Nuvana Estudio de Diseño Web" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://nuvana.com" />
-
+        <link rel="canonical" href="https://nuvana.com/es" />
+        
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://nuvana.com" />
-        <meta property="og:title" content="Professional Website Design Services in Puerto Rico | Nuvana" />
-        <meta property="og:description" content="Expert website design and development services in Puerto Rico. Custom bilingual websites, e-commerce solutions, and SEO optimization for businesses." />
+        <meta property="og:url" content="https://nuvana.com/es" />
+        <meta property="og:title" content="Servicios Profesionales de Diseño Web en Puerto Rico | Nuvana" />
+        <meta property="og:description" content="Servicios expertos de diseño y desarrollo web en Puerto Rico. Sitios web personalizados bilingües, soluciones de comercio electrónico y optimización SEO para negocios." />
         <meta property="og:image" content="https://nuvana.com/images/Nuvana Logo.jpg" />
-        <meta property="og:site_name" content="Nuvana Web Design Studio" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="es_PR" />
-
+        <meta property="og:site_name" content="Nuvana Estudio de Diseño Web" />
+        <meta property="og:locale" content="es_PR" />
+        <meta property="og:locale:alternate" content="en_US" />
+        
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://nuvana.com" />
-        <meta name="twitter:title" content="Professional Website Design Services in Puerto Rico | Nuvana" />
-        <meta name="twitter:description" content="Expert website design and development services in Puerto Rico. Custom bilingual websites, e-commerce solutions, and SEO optimization." />
+        <meta name="twitter:url" content="https://nuvana.com/es" />
+        <meta name="twitter:title" content="Servicios Profesionales de Diseño Web en Puerto Rico | Nuvana" />
+        <meta name="twitter:description" content="Servicios expertos de diseño y desarrollo web en Puerto Rico. Sitios web personalizados bilingües, soluciones de comercio electrónico y optimización SEO." />
         <meta name="twitter:image" content="https://nuvana.com/images/Nuvana Logo.jpg" />
-
+        
         {/* Hreflang for multilingual SEO */}
-        <link rel="alternate" hrefLang="en" href="https://nuvana.com" />
         <link rel="alternate" hrefLang="es" href="https://nuvana.com/es" />
+        <link rel="alternate" hrefLang="en" href="https://nuvana.com" />
         <link rel="alternate" hrefLang="x-default" href="https://nuvana.com" />
+        
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@graph": [
               {
                 "@type": "WebSite",
-                "@id": "https://nuvana.com/#website",
-                "url": "https://nuvana.com",
-                "name": "Nuvana Web Design Studio",
-                "description": "Professional website design and development services in Puerto Rico. Custom bilingual websites, e-commerce solutions, and SEO optimization.",
-                "inLanguage": ["en-US", "es-PR"],
+                "@id": "https://nuvana.com/es#website",
+                "url": "https://nuvana.com/es",
+                "name": "Nuvana Estudio de Diseño Web",
+                "description": "Servicios profesionales de diseño y desarrollo web en Puerto Rico. Sitios web personalizados bilingües, soluciones de comercio electrónico y optimización SEO.",
+                "inLanguage": "es-PR",
                 "potentialAction": {
                   "@type": "SearchAction",
-                  "target": "https://nuvana.com/?s={search_term_string}",
+                  "target": "https://nuvana.com/es?s={search_term_string}",
                   "query-input": "required name=search_term_string"
                 }
               },
               {
                 "@type": "LocalBusiness",
-                "@id": "https://nuvana.com/#business",
-                "name": "Nuvana Web Design Studio",
+                "@id": "https://nuvana.com/es#business",
+                "name": "Nuvana Estudio de Diseño Web",
                 "alternateName": "Nuvana",
-                "description": "Professional website design and development company specializing in custom bilingual websites, e-commerce solutions, and SEO optimization for businesses in Puerto Rico.",
-                "url": "https://nuvana.com",
+                "description": "Empresa profesional de diseño y desarrollo web especializada en sitios web personalizados bilingües, soluciones de comercio electrónico y optimización SEO para negocios en Puerto Rico.",
+                "url": "https://nuvana.com/es",
                 "telephone": "+1-787-123-4567",
                 "email": "nurvanatec@gmail.com",
                 "foundingDate": "2020",
@@ -92,15 +93,15 @@ export default function Home() {
                   "https://www.linkedin.com/company/nuvana"
                 ],
                 "priceRange": "$$",
-                "paymentAccepted": ["Cash", "Credit Card", "PayPal", "Bank Transfer"],
+                "paymentAccepted": ["Efectivo", "Tarjeta de Crédito", "PayPal", "Transferencia Bancaria"],
                 "currenciesAccepted": "USD"
               },
               {
                 "@type": "ProfessionalService",
-                "@id": "https://nuvana.com/#service",
-                "name": "Website Design and Development Services",
+                "@id": "https://nuvana.com/es#service",
+                "name": "Servicios de Diseño y Desarrollo Web",
                 "provider": {
-                  "@id": "https://nuvana.com/#business"
+                  "@id": "https://nuvana.com/es#business"
                 },
                 "areaServed": {
                   "@type": "State",
@@ -108,38 +109,38 @@ export default function Home() {
                 },
                 "hasOfferCatalog": {
                   "@type": "OfferCatalog",
-                  "name": "Web Design Services",
+                  "name": "Servicios de Diseño Web",
                   "itemListElement": [
                     {
                       "@type": "Offer",
                       "itemOffered": {
                         "@type": "Service",
-                        "name": "Custom Website Design",
-                        "description": "Professional custom website design tailored to your business needs"
+                        "name": "Diseño Web Personalizado",
+                        "description": "Diseño web profesional personalizado adaptado a las necesidades de tu negocio"
                       }
                     },
                     {
                       "@type": "Offer",
                       "itemOffered": {
                         "@type": "Service",
-                        "name": "E-commerce Development",
-                        "description": "Complete e-commerce website development with payment integration"
+                        "name": "Desarrollo de Comercio Electrónico",
+                        "description": "Desarrollo completo de sitios web de comercio electrónico con integración de pagos"
                       }
                     },
                     {
                       "@type": "Offer",
                       "itemOffered": {
                         "@type": "Service",
-                        "name": "SEO Optimization",
-                        "description": "Search engine optimization to improve your website's visibility"
+                        "name": "Optimización SEO",
+                        "description": "Optimización para motores de búsqueda para mejorar la visibilidad de tu sitio web"
                       }
                     },
                     {
                       "@type": "Offer",
                       "itemOffered": {
                         "@type": "Service",
-                        "name": "Bilingual Website Development",
-                        "description": "Bilingual websites in English and Spanish for broader market reach"
+                        "name": "Desarrollo de Sitios Web Bilingües",
+                        "description": "Sitios web bilingües en inglés y español para mayor alcance de mercado"
                       }
                     }
                   ]
@@ -154,7 +155,7 @@ export default function Home() {
         <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-white/10">
           <div className="flex justify-between items-center p-6 max-w-7xl mx-auto">
             <div className="flex items-center">
-              <img src="/images/Nuvana Logo.jpg" alt="Nuvana Web Design Studio - Professional Website Development Puerto Rico" className="h-10 w-10 mr-3 rounded-lg" />
+              <img src="/images/Nuvana Logo.jpg" alt="Nuvana Estudio de Diseño Web - Desarrollo Web Profesional Puerto Rico" className="h-10 w-10 mr-3 rounded-lg" />
               <span className="text-2xl font-cyber font-bold gradient-text">Nuvana</span>
             </div>
             <LanguageToggle />

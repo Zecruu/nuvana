@@ -1,0 +1,51 @@
+# Robots.txt for Nuvana Web Design Studio
+# https://nuvana.com
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow important files
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://nuvana.com/sitemap.xml
+Sitemap: https://nuvana.com/sitemap-es.xml
+
+# Host directive
+Host: https://nuvana.com
