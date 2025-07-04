@@ -10,22 +10,22 @@ export default function LeadMagnet({ type = "checklist", isModal = false, onClos
 
   const leadMagnets = {
     checklist: {
-      title: "Free Website Checklist: 25 Must-Have Features for Puerto Rico Businesses",
-      titleEs: "Lista Gratuita: 25 Características Esenciales para Sitios Web de Negocios en Puerto Rico",
-      description: "Download our comprehensive checklist used by 500+ successful Puerto Rico businesses to ensure their websites convert visitors into customers.",
-      descriptionEs: "Descarga nuestra lista completa usada por 500+ negocios exitosos en Puerto Rico para asegurar que sus sitios web conviertan visitantes en clientes.",
+      title: "Free Website Checklist: 25 Must-Have Features for Global Businesses",
+      titleEs: "Lista Gratuita: 25 Características Esenciales para Sitios Web de Negocios Globales",
+      description: "Download our comprehensive checklist used by 500+ successful businesses worldwide to ensure their websites convert visitors into customers.",
+      descriptionEs: "Descarga nuestra lista completa usada por 500+ negocios exitosos mundialmente para asegurar que sus sitios web conviertan visitantes en clientes.",
       benefits: [
         "25-point website optimization checklist",
         "Bilingual content strategy guide", 
         "Mobile optimization requirements",
-        "Local SEO checklist for Puerto Rico",
+        "Multilingual SEO optimization guide",
         "Conversion optimization tips"
       ],
       benefitsEs: [
         "Lista de 25 puntos para optimización web",
         "Guía de estrategia de contenido bilingüe",
         "Requisitos de optimización móvil", 
-        "Lista SEO local para Puerto Rico",
+        "Guía de optimización SEO multilingüe",
         "Tips de optimización de conversiones"
       ]
     },
@@ -50,10 +50,10 @@ export default function LeadMagnet({ type = "checklist", isModal = false, onClos
       ]
     },
     guide: {
-      title: "The Complete Guide to Bilingual Websites in Puerto Rico",
-      titleEs: "La Guía Completa para Sitios Web Bilingües en Puerto Rico",
-      description: "Learn how bilingual websites generate 300% more leads and capture both English and Spanish-speaking markets in Puerto Rico.",
-      descriptionEs: "Aprende cómo los sitios web bilingües generan 300% más leads y capturan tanto mercados de habla inglesa como española en Puerto Rico.",
+      title: "The Complete Guide to Bilingual Websites for Global Markets",
+      titleEs: "La Guía Completa para Sitios Web Bilingües para Mercados Globales",
+      description: "Learn how bilingual websites generate 300% more leads and capture both English and Spanish-speaking markets worldwide.",
+      descriptionEs: "Aprende cómo los sitios web bilingües generan 300% más leads y capturan tanto mercados de habla inglesa como española mundialmente.",
       benefits: [
         "Bilingual website strategy framework",
         "Cultural adaptation guidelines",

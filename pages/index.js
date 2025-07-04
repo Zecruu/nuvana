@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Website Design Puerto Rico | Custom Web Development Services | Nuvana</title>
-        <meta name="description" content="Professional website design and development in Puerto Rico. Custom bilingual websites, responsive design, SEO optimization. Get your business online with Nuvana's expert web design services." />
-        <meta name="keywords" content="website design Puerto Rico, web development Puerto Rico, custom websites, bilingual web design, responsive web design, SEO services Puerto Rico, website maintenance, website builder Puerto Rico, diseño web Puerto Rico, desarrollo web, sitios web personalizados" />
+        <title>Bilingual Website Design | English & Spanish Web Development Services | Nuvana</title>
+        <meta name="description" content="Professional bilingual website design and development. Custom websites in English, Spanish, or both languages. Responsive design, SEO optimization. Expand your global market reach with Nuvana." />
+        <meta name="keywords" content="bilingual website design, English Spanish web development, multilingual websites, custom bilingual sites, responsive web design, SEO services, website maintenance, bilingual website builder, diseño web bilingüe, desarrollo web multilingüe, sitios web inglés español" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="author" content="Nuvana Web Design Studio" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,8 +27,8 @@ export default function Home() {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nuvana.com" />
-        <meta property="og:title" content="Professional Website Design Services in Puerto Rico | Nuvana" />
-        <meta property="og:description" content="Expert website design and development services in Puerto Rico. Custom bilingual websites, responsive design, and SEO optimization for businesses." />
+        <meta property="og:title" content="Professional Bilingual Website Design Services | Nuvana" />
+        <meta property="og:description" content="Expert bilingual website design and development services. Custom websites in English, Spanish, or both languages. Responsive design and SEO optimization for global markets." />
         <meta property="og:image" content="https://nuvana.com/images/Nuvana Logo.jpg" />
         <meta property="og:site_name" content="Nuvana Web Design Studio" />
         <meta property="og:locale" content="en_US" />

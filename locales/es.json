@@ -1,12 +1,12 @@
 {
   "hero": {
-    "headline": "Diseño y Desarrollo Web Profesional en Puerto Rico",
-    "subheadline": "Sitios web personalizados bilingües, diseño responsivo y optimización SEO. Lleva tu negocio online con servicios expertos de diseño web.",
+    "headline": "Diseño y Desarrollo Web Profesional Bilingüe",
+    "subheadline": "Sitios web personalizados en inglés, español, o ambos idiomas. Diseño responsivo y optimización SEO para alcanzar mercados globales.",
     "cta": "Solicita tu Cotización Gratuita"
   },
   "about": {
-    "title": "Empresa Líder en Diseño Web en Puerto Rico",
-    "text": "Nuvana es la empresa premier de diseño y desarrollo web en Puerto Rico. Nos especializamos en crear sitios web personalizados bilingües, diseños responsivos y soluciones optimizadas para SEO para negocios de todas las industrias. Nuestro equipo experto combina desarrollo web de vanguardia con marketing digital estratégico para ayudar a tu negocio a triunfar en línea."
+    "title": "Empresa Líder en Diseño Web Bilingüe",
+    "text": "Nuvana es una empresa premier de diseño y desarrollo web bilingüe. Nos especializamos en crear sitios web personalizados en inglés, español, o ambos idiomas, con diseños responsivos y soluciones optimizadas para SEO para negocios de todas las industrias. Nuestro equipo experto combina desarrollo web de vanguardia con marketing digital estratégico para ayudar a tu negocio a alcanzar mercados globales."
   },
   "services": {
     "title": "Servicios Profesionales de Diseño Web",
@@ -14,7 +14,7 @@
       { "title": "Desarrollo de Sitios Web Personalizados", "desc": "Diseño y desarrollo web profesional personalizado para las necesidades de tu negocio e identidad de marca." },
       { "title": "Diseño Web Responsivo", "desc": "Sitios web responsivos y amigables para móviles que funcionan perfectamente en todos los dispositivos y tamaños de pantalla." },
       { "title": "SEO y Marketing Digital", "desc": "Optimización para motores de búsqueda y estrategias de marketing digital para aumentar tu visibilidad online y generar tráfico." },
-      { "title": "Soluciones Web Bilingües", "desc": "Desarrollo experto de sitios web bilingües en inglés y español para alcanzar mercados más amplios en Puerto Rico y más allá." }
+      { "title": "Soluciones Web Multilingües", "desc": "Desarrollo experto de sitios web en inglés, español, o ambos idiomas para alcanzar mercados globales y audiencias diversas en todo el mundo." }
     ]
   },
   "whyChooseUs": {

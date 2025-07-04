@@ -2,43 +2,43 @@ export const blogPosts = [
   {
     id: 1,
     slug: "why-your-puerto-rico-business-needs-professional-website-2025",
-    title: "Why Your Puerto Rico Business Needs a Professional Website in 2025",
-    titleEs: "Por Qué Tu Negocio en Puerto Rico Necesita un Sitio Web Profesional en 2025",
-    excerpt: "Discover why 73% of Puerto Rico businesses with professional websites see 40% more customers. Learn the essential features that drive local business growth.",
-    excerptEs: "Descubre por qué el 73% de los negocios en Puerto Rico con sitios web profesionales ven 40% más clientes. Aprende las características esenciales que impulsan el crecimiento local.",
+    title: "Why Your Business Needs a Professional Website in 2025: English, Spanish, or Both",
+    titleEs: "Por Qué Tu Negocio Necesita un Sitio Web Profesional en 2025: Inglés, Español, o Ambos",
+    excerpt: "Discover why 73% of businesses with professional websites see 40% more customers. Learn how multilingual websites can expand your market reach globally.",
+    excerptEs: "Descubre por qué el 73% de los negocios con sitios web profesionales ven 40% más clientes. Aprende cómo los sitios web multilingües pueden expandir tu alcance de mercado globalmente.",
     content: `
-# Why Your Puerto Rico Business Needs a Professional Website in 2025
+# Why Your Business Needs a Professional Website in 2025: English, Spanish, or Both
 
-In today's digital-first world, **your website is your most powerful business tool**. If you're a Puerto Rico business owner still wondering whether you need a professional website, the statistics speak for themselves: **73% of businesses with professional websites report 40% more customers** than those without.
+In today's digital-first world, **your website is your most powerful business tool**. Whether you serve English-speaking, Spanish-speaking, or bilingual markets, the statistics speak for themselves: **73% of businesses with professional websites report 40% more customers** than those without.
 
-## The Puerto Rico Digital Landscape is Changing Fast
+## The Global Digital Landscape is Changing Fast
 
-Puerto Rico's digital transformation is accelerating. With over **2.8 million internet users** on the island and **85% of consumers** researching businesses online before visiting, your website isn't just nice to have—it's essential for survival.
+Digital transformation is accelerating worldwide. With over **5 billion internet users** globally and **85% of consumers** researching businesses online before purchasing, your website isn't just nice to have—it's essential for survival in any market.
 
 ### Here's What's Happening Right Now:
-- **67% of Puerto Rico consumers** search for local businesses online weekly
-- **Mobile searches** for "near me" businesses have increased by 200% since 2023
-- **Bilingual websites** get 3x more engagement from Puerto Rico audiences
+- **67% of consumers** search for businesses online weekly
+- **Mobile searches** for local businesses have increased by 200% since 2023
+- **Multilingual websites** get 3x more engagement from diverse audiences
 - Businesses without websites lose an average of **$50,000 annually** in potential revenue
 
-## What Makes a Website "Professional" in Puerto Rico?
+## What Makes a Website "Professional" for Global Markets?
 
-Not all websites are created equal. A professional website for Puerto Rico businesses must include:
+Not all websites are created equal. A professional website for modern businesses must include:
 
-### 1. **Bilingual Functionality (English & Spanish)**
-Your customers speak both languages. Your website should too. Bilingual websites in Puerto Rico see:
+### 1. **Language Flexibility (English, Spanish, or Both)**
+Your customers may speak English, Spanish, or both. Your website should serve their language preferences. Multilingual websites see:
 - 300% higher engagement rates
-- 45% longer session durations  
+- 45% longer session durations
 - 60% more contact form submissions
 
 ### 2. **Mobile-First Design**
-With 78% of Puerto Rico internet users browsing on mobile devices, your website MUST work perfectly on phones and tablets.
+With 78% of internet users browsing on mobile devices, your website MUST work perfectly on phones and tablets.
 
-### 3. **Local SEO Optimization**
-When someone searches "best [your service] in San Juan" or "mejor [tu servicio] en Bayamón," you want to appear first.
+### 3. **SEO Optimization**
+When someone searches for your services in English or Spanish, you want to appear first in search results.
 
 ### 4. **Fast Loading Speed**
-Puerto Rico users expect websites to load in under 3 seconds. Slower sites lose 40% of visitors immediately.
+Users expect websites to load in under 3 seconds. Slower sites lose 40% of visitors immediately.
 
 ## The Real Cost of NOT Having a Professional Website
 
@@ -160,18 +160,18 @@ Hablemos de números. Los negocios de Puerto Rico sin sitios web profesionales e
   {
     id: 2,
     slug: "bilingual-website-design-puerto-rico-business-advantage",
-    title: "The Bilingual Website Advantage: Why Puerto Rico Businesses Need English & Spanish",
-    titleEs: "La Ventaja del Sitio Web Bilingüe: Por Qué los Negocios de Puerto Rico Necesitan Inglés y Español",
-    excerpt: "Bilingual websites in Puerto Rico generate 300% more leads than single-language sites. Discover how to capture both English and Spanish-speaking customers.",
-    excerptEs: "Los sitios web bilingües en Puerto Rico generan 300% más leads que los sitios de un solo idioma. Descubre cómo capturar clientes de habla inglesa y española.",
+    title: "The Bilingual Website Advantage: Reaching English & Spanish Markets Worldwide",
+    titleEs: "La Ventaja del Sitio Web Bilingüe: Alcanzando Mercados en Inglés y Español Mundialmente",
+    excerpt: "Bilingual websites generate 300% more leads than single-language sites. Discover how to capture both English and Spanish-speaking customers globally.",
+    excerptEs: "Los sitios web bilingües generan 300% más leads que los sitios de un solo idioma. Descubre cómo capturar clientes de habla inglesa y española globalmente.",
     content: `
-# The Bilingual Website Advantage: Why Puerto Rico Businesses Need English & Spanish
+# The Bilingual Website Advantage: Reaching English & Spanish Markets Worldwide
 
-**Here's a shocking statistic:** Puerto Rico businesses with bilingual websites generate **300% more leads** than those with single-language sites. Yet 68% of local businesses still operate with English-only or Spanish-only websites, missing out on massive revenue opportunities.
+**Here's a shocking statistic:** Businesses with bilingual websites generate **300% more leads** than those with single-language sites. Yet 68% of businesses still operate with English-only or Spanish-only websites, missing out on massive revenue opportunities in the global Spanish-speaking market.
 
-## The Puerto Rico Market Reality
+## The Global Spanish Market Reality
 
-Puerto Rico's unique linguistic landscape creates an incredible opportunity for smart business owners. With **54% of residents** being bilingual and **tourism contributing $8.9 billion** annually, your website language strategy can make or break your success.
+The Spanish-speaking market represents an incredible opportunity for smart business owners. With **500+ million Spanish speakers** worldwide and **$1.7 trillion in purchasing power**, your website language strategy can make or break your global success.
 
 ### The Numbers Don't Lie:
 - **English-speaking tourists** spend an average of $1,200 per visit
@@ -310,10 +310,10 @@ Every day you operate with a single-language website, you're turning away potent
   {
     id: 3,
     slug: "mobile-first-web-design-puerto-rico-2025",
-    title: "Mobile-First Web Design: Why 78% of Puerto Rico Users Browse on Mobile",
-    titleEs: "Diseño Web Mobile-First: Por Qué 78% de Usuarios de Puerto Rico Navegan en Móvil",
-    excerpt: "Mobile traffic in Puerto Rico has increased 340% since 2020. Learn why mobile-first design is crucial for capturing local customers and tourists.",
-    excerptEs: "El tráfico móvil en Puerto Rico ha aumentado 340% desde 2020. Aprende por qué el diseño mobile-first es crucial para capturar clientes locales y turistas.",
+    title: "Mobile-First Web Design: Why 78% of Global Users Browse on Mobile",
+    titleEs: "Diseño Web Mobile-First: Por Qué 78% de Usuarios Globales Navegan en Móvil",
+    excerpt: "Mobile traffic has increased 340% since 2020. Learn why mobile-first design is crucial for capturing customers in any market, English or Spanish.",
+    excerptEs: "El tráfico móvil ha aumentado 340% desde 2020. Aprende por qué el diseño mobile-first es crucial para capturar clientes en cualquier mercado, inglés o español.",
     content: `
 # Mobile-First Web Design: Why 78% of Puerto Rico Users Browse on Mobile
 
@@ -524,10 +524,10 @@ In Puerto Rico's mobile-first market, your website's mobile experience directly 
   {
     id: 4,
     slug: "local-seo-puerto-rico-businesses-2025",
-    title: "Local SEO Mastery: How Puerto Rico Businesses Can Dominate Google Search",
-    titleEs: "Maestría en SEO Local: Cómo los Negocios de Puerto Rico Pueden Dominar Google",
-    excerpt: "85% of Puerto Rico consumers search for local businesses online. Learn the exact SEO strategies that put your business first in local search results.",
-    excerptEs: "85% de los consumidores de Puerto Rico buscan negocios locales en línea. Aprende las estrategias exactas de SEO que ponen tu negocio primero en resultados locales.",
+    title: "Multilingual SEO Mastery: How to Dominate Google in English & Spanish",
+    titleEs: "Maestría en SEO Multilingüe: Cómo Dominar Google en Inglés y Español",
+    excerpt: "85% of consumers search for businesses online in their preferred language. Learn the exact SEO strategies for ranking in both English and Spanish markets.",
+    excerptEs: "85% de los consumidores buscan negocios en línea en su idioma preferido. Aprende las estrategias exactas de SEO para posicionarte en mercados de inglés y español.",
     content: `
 # Local SEO Mastery: How Puerto Rico Businesses Can Dominate Google Search
 
@@ -787,10 +787,10 @@ Every day you delay local SEO optimization, competitors are capturing customers 
   {
     id: 5,
     slug: "website-cost-roi-puerto-rico-business-investment",
-    title: "Website Cost vs ROI: Why Your Puerto Rico Business Website Pays for Itself",
-    titleEs: "Costo vs ROI del Sitio Web: Por Qué tu Sitio Web de Negocio en Puerto Rico se Paga Solo",
-    excerpt: "Worried about website costs? Learn how Puerto Rico businesses see 400% ROI within 12 months and why NOT having a website costs more than having one.",
-    excerptEs: "¿Preocupado por los costos del sitio web? Aprende cómo los negocios de Puerto Rico ven 400% ROI en 12 meses y por qué NO tener un sitio web cuesta más que tener uno.",
+    title: "Website Cost vs ROI: Why Your Multilingual Website Pays for Itself",
+    titleEs: "Costo vs ROI del Sitio Web: Por Qué tu Sitio Web Multilingüe se Paga Solo",
+    excerpt: "Worried about website costs? Learn how businesses see 400% ROI within 12 months with multilingual websites and why NOT having one costs more than having one.",
+    excerptEs: "¿Preocupado por los costos del sitio web? Aprende cómo los negocios ven 400% ROI en 12 meses con sitios web multilingües y por qué NO tener uno cuesta más que tener uno.",
     content: `
 # Website Cost vs ROI: Why Your Puerto Rico Business Website Pays for Itself
 

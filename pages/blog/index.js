@@ -32,9 +32,9 @@ export default function BlogIndex() {
   return (
     <>
       <Head>
-        <title>Web Design Blog Puerto Rico | Expert Tips & Insights | Nuvana</title>
-        <meta name="description" content="Expert web design tips, SEO strategies, and digital marketing insights for Puerto Rico businesses. Learn how to grow your business online with professional advice." />
-        <meta name="keywords" content="web design blog, Puerto Rico SEO, digital marketing tips, website optimization, bilingual websites, mobile design" />
+        <title>Bilingual Web Design Blog | Expert Tips & Insights | Nuvana</title>
+        <meta name="description" content="Expert bilingual web design tips, SEO strategies, and digital marketing insights. Learn how to grow your business online with English and Spanish websites." />
+        <meta name="keywords" content="bilingual web design blog, multilingual SEO, digital marketing tips, website optimization, English Spanish websites, mobile design" />
         <link rel="canonical" href="https://nuvana.com/blog" />
         
         <script type="application/ld+json" dangerouslySetInnerHTML={{
@@ -76,8 +76,8 @@ export default function BlogIndex() {
                 Web Design Insights
               </h1>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Expert tips, strategies, and insights to help your Puerto Rico business succeed online. 
-                Learn from our experience building websites that convert.
+                Expert tips, strategies, and insights to help your business succeed online globally.
+                Learn from our experience building bilingual websites that convert.
               </p>
             </motion.div>
           </div>
@@ -168,8 +168,8 @@ export default function BlogIndex() {
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                 {language === 'es'
-                  ? 'Obtén una consulta gratuita y descubre cómo un sitio web profesional puede hacer crecer tu negocio en Puerto Rico.'
-                  : 'Get a free consultation and discover how a professional website can grow your Puerto Rico business.'
+                  ? 'Obtén una consulta gratuita y descubre cómo un sitio web bilingüe profesional puede hacer crecer tu negocio globalmente.'
+                  : 'Get a free consultation and discover how a professional bilingual website can grow your business globally.'
                 }
               </p>
               <motion.a
