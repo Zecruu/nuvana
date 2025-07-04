@@ -941,14 +941,14 @@ Every day you delay local SEO optimization, competitors are capturing customers 
 ## Website ROI Calculation Formula
 
 ### Simple ROI Calculation:
-```
+\`\`\`
 ROI = (Revenue Gained - Website Investment) / Website Investment × 100
 
 Example:
 Revenue Gained: $30,000
 Website Investment: $4,000
 ROI = ($30,000 - $4,000) / $4,000 × 100 = 650%
-```
+\`\`\`
 
 ### Advanced ROI Tracking:
 **Track These Metrics:**
