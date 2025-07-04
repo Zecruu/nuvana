@@ -125,6 +125,7 @@ export default function Blog() {
                     <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
+                </div>
               </Link>
             </motion.article>
           ))}
