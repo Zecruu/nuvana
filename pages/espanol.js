@@ -17,8 +17,8 @@ export default function SpanishHome() {
     <>
       <Head>
         <title>Diseño Web Puerto Rico | Desarrollo de Sitios Web Personalizados | Nuvana</title>
-        <meta name="description" content="Diseño web profesional y desarrollo en Puerto Rico. Sitios web personalizados bilingües, tiendas online, optimización SEO. Lleva tu negocio online con los servicios expertos de diseño web de Nuvana." />
-        <meta name="keywords" content="diseño web Puerto Rico, desarrollo web Puerto Rico, sitios web personalizados, diseño web bilingüe, desarrollo ecommerce, servicios SEO Puerto Rico, diseño web responsivo, creador de sitios web Puerto Rico, website design Puerto Rico, desarrollo sitios web" />
+        <meta name="description" content="Diseño web profesional y desarrollo en Puerto Rico. Sitios web personalizados bilingües, diseño responsivo, optimización SEO. Lleva tu negocio online con los servicios expertos de diseño web de Nuvana." />
+        <meta name="keywords" content="diseño web Puerto Rico, desarrollo web Puerto Rico, sitios web personalizados, diseño web bilingüe, diseño web responsivo, servicios SEO Puerto Rico, mantenimiento web, creador de sitios web Puerto Rico, website design Puerto Rico, desarrollo sitios web" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="author" content="Nuvana Estudio de Diseño Web" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +28,7 @@ export default function SpanishHome() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nuvana.com/espanol" />
         <meta property="og:title" content="Servicios Profesionales de Diseño Web en Puerto Rico | Nuvana" />
-        <meta property="og:description" content="Servicios expertos de diseño y desarrollo web en Puerto Rico. Sitios web personalizados bilingües, soluciones de comercio electrónico y optimización SEO para negocios." />
+        <meta property="og:description" content="Servicios expertos de diseño y desarrollo web en Puerto Rico. Sitios web personalizados bilingües, diseño responsivo y optimización SEO para negocios." />
         <meta property="og:image" content="https://nuvana.com/images/Nuvana Logo.jpg" />
         <meta property="og:site_name" content="Nuvana Estudio de Diseño Web" />
         <meta property="og:locale" content="es_PR" />
@@ -38,7 +38,7 @@ export default function SpanishHome() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://nuvana.com/espanol" />
         <meta name="twitter:title" content="Servicios Profesionales de Diseño Web en Puerto Rico | Nuvana" />
-        <meta name="twitter:description" content="Servicios expertos de diseño y desarrollo web en Puerto Rico. Sitios web personalizados bilingües, soluciones de comercio electrónico y optimización SEO." />
+        <meta name="twitter:description" content="Servicios expertos de diseño y desarrollo web en Puerto Rico. Sitios web personalizados bilingües, diseño responsivo y optimización SEO." />
         <meta name="twitter:image" content="https://nuvana.com/images/Nuvana Logo.jpg" />
         
         {/* Hreflang for multilingual SEO */}

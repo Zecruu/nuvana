@@ -1,18 +1,18 @@
 {
   "hero": {
     "headline": "Professional Website Design & Development in Puerto Rico",
-    "subheadline": "Custom bilingual websites, e-commerce solutions, and SEO optimization. Get your business online with expert web design services.",
+    "subheadline": "Custom bilingual websites, responsive design, and SEO optimization. Get your business online with expert web design services.",
     "cta": "Get Your Free Website Quote"
   },
   "about": {
     "title": "Leading Web Design Company in Puerto Rico",
-    "text": "Nuvana is Puerto Rico's premier website design and development company. We specialize in creating custom bilingual websites, e-commerce platforms, and SEO-optimized solutions for businesses across all industries. Our expert team combines cutting-edge web development with strategic digital marketing to help your business succeed online."
+    "text": "Nuvana is Puerto Rico's premier website design and development company. We specialize in creating custom bilingual websites, responsive designs, and SEO-optimized solutions for businesses across all industries. Our expert team combines cutting-edge web development with strategic digital marketing to help your business succeed online."
   },
   "services": {
     "title": "Professional Website Design Services",
     "items": [
       { "title": "Custom Website Development", "desc": "Professional custom website design and development tailored to your business needs and brand identity." },
-      { "title": "E-commerce Website Development", "desc": "Complete online store development with payment processing, inventory management, and mobile optimization." },
+      { "title": "Responsive Web Design", "desc": "Mobile-friendly responsive websites that work perfectly on all devices and screen sizes for optimal user experience." },
       { "title": "SEO & Digital Marketing", "desc": "Search engine optimization and digital marketing strategies to increase your online visibility and drive traffic." },
       { "title": "Bilingual Website Solutions", "desc": "Expert bilingual website development in English and Spanish to reach broader markets in Puerto Rico and beyond." }
     ]

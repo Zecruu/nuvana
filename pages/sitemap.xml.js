@@ -72,7 +72,7 @@ function generateSiteMap() {
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>${baseUrl}/ecommerce-development</loc>
+    <loc>${baseUrl}/responsive-web-design</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

@@ -62,7 +62,7 @@ function generateSpanishSiteMap() {
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>${baseUrl}/es/desarrollo-ecommerce</loc>
+    <loc>${baseUrl}/es/diseno-web-responsivo</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

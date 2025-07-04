@@ -82,12 +82,12 @@ const nextConfig = {
         destination: '/es',
       },
       {
-        source: '/ecommerce-development',
+        source: '/responsive-web-design',
         destination: '/',
       },
       {
-        source: '/desarrollo-ecommerce',
-        destination: '/es',
+        source: '/diseno-web-responsivo',
+        destination: '/espanol',
       },
     ]
   },
