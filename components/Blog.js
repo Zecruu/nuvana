@@ -78,53 +78,55 @@ export default function Blog() {
             <motion.article
               key={post.id}
               variants={cardVariants}
-              className="group relative"
+              className="group relative h-full"
               whileHover={{ y: -8 }}
             >
-              <Link href={`/blog/${post.slug}`}>
-                <div className="glass-effect rounded-2xl overflow-hidden border border-white/10 hover:border-neon/30 transition-all duration-300 h-full cursor-pointer">
-                {/* Image */}
-                <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/50 to-transparent"></div>
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary text-xs font-medium">
-                      {language === 'es' ? post.categoryEs : post.category}
-                    </span>
-                  </div>
-                  <div className="absolute bottom-4 right-4">
-                    <span className="px-2 py-1 bg-dark-bg/80 rounded text-xs text-gray-300 flex items-center gap-1">
-                      <FiClock className="text-primary" />
-                      {language === 'es' ? post.readTimeEs : post.readTime}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="p-6">
-                  <div className="flex items-center gap-4 text-sm text-gray-400 mb-3">
-                    <div className="flex items-center gap-1">
-                      <FiCalendar className="text-primary" />
-                      <span>{new Date(post.date).toLocaleDateString()}</span>
+              <Link href={`/blog/${post.slug}`} className="block h-full">
+                <div className="glass-effect blog-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/50 transition-all duration-500 h-full cursor-pointer">
+                  {/* Content */}
+                  <div className="p-6 flex flex-col h-full relative">
+                    {/* Category Badge */}
+                    <div className="absolute top-4 right-4">
+                      <span className="px-3 py-1.5 bg-primary/90 border border-primary/30 rounded-full text-white text-xs font-semibold backdrop-blur-sm shadow-lg">
+                        {language === 'es' ? post.categoryEs : post.category}
+                      </span>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <FiUser className="text-primary" />
-                      <span>{post.author}</span>
+
+                    {/* Read Time Badge */}
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1.5 bg-dark-bg/90 rounded-full text-xs text-gray-200 flex items-center gap-1.5 backdrop-blur-sm shadow-lg">
+                        <FiClock className="text-primary w-3 h-3" />
+                        {language === 'es' ? post.readTimeEs : post.readTime}
+                      </span>
+                    </div>
+                    {/* Meta Info */}
+                    <div className="flex items-center gap-4 text-sm text-gray-400 mb-6 mt-12">
+                      <div className="flex items-center gap-1.5">
+                        <FiCalendar className="text-primary w-3 h-3" />
+                        <span>{new Date(post.date).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US')}</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <FiUser className="text-primary w-3 h-3" />
+                        <span>{post.author}</span>
+                      </div>
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors duration-300 line-clamp-2 leading-tight">
+                      {language === 'es' ? post.titleEs : post.title}
+                    </h3>
+
+                    {/* Excerpt */}
+                    <p className="text-gray-300 text-base leading-relaxed mb-8 line-clamp-4 flex-grow">
+                      {language === 'es' ? post.excerptEs : post.excerpt}
+                    </p>
+
+                    {/* Read More Link */}
+                    <div className="flex items-center text-primary font-semibold text-base group-hover:text-secondary transition-colors duration-300 mt-auto">
+                      <span>{language === 'es' ? 'Leer Más' : 'Read More'}</span>
+                      <FiArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
                   </div>
-
-                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors line-clamp-2">
-                    {language === 'es' ? post.titleEs : post.title}
-                  </h3>
-
-                  <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
-                    {language === 'es' ? post.excerptEs : post.excerpt}
-                  </p>
-
-                  <div className="flex items-center text-primary font-medium text-sm group-hover:text-neon transition-colors">
-                    <span>{language === 'es' ? 'Leer Más' : 'Read More'}</span>
-                    <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </div>
                 </div>
               </Link>
             </motion.article>
@@ -133,7 +135,7 @@ export default function Blog() {
 
         {/* CTA */}
         <motion.div
-          className="text-center mt-12"
+          className="text-center mt-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -141,12 +143,12 @@ export default function Blog() {
         >
           <motion.a
             href="/blog"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-primary transition-all"
-            whileHover={{ scale: 1.05, y: -2 }}
+            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary via-primary-light to-secondary text-white font-semibold rounded-xl hover:shadow-primary/30 hover:shadow-2xl transition-all duration-300 border border-primary/20"
+            whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.95 }}
           >
-            View All Articles
-            <FiArrowRight />
+            <span>{language === 'es' ? 'Ver Todos los Artículos' : 'View All Articles'}</span>
+            <FiArrowRight className="w-5 h-5" />
           </motion.a>
         </motion.div>
       </div>

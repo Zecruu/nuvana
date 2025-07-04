@@ -130,13 +130,14 @@ export default function Services() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <p className="text-gray-400 mb-6">Need a custom solution? We've got you covered.</p>
-          <motion.button
-            className="px-8 py-4 border-2 border-primary/50 text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
+          <motion.a
+            href="#quote"
+            className="inline-block px-8 py-4 border-2 border-primary/50 text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
             whileHover={{ scale: 1.05, borderColor: 'rgba(99, 102, 241, 0.8)' }}
             whileTap={{ scale: 0.95 }}
           >
             Discuss Your Project
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

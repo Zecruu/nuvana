@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useLanguage } from '../components/LanguageContext'
-import LanguageToggle from '../components/LanguageToggle'
+import Navigation from '../components/Navigation'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Services from '../components/Services'
@@ -47,16 +47,8 @@ export default function SpanishHome() {
         <link rel="alternate" hrefLang="x-default" href="https://nuvana.com" />
       </Head>
       <div className="min-h-screen bg-dark-bg text-white relative overflow-x-hidden">
-        {/* Fixed Header */}
-        <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-white/10">
-          <div className="flex justify-between items-center p-6 max-w-7xl mx-auto">
-            <div className="flex items-center">
-              <img src="/images/Nuvana Logo.jpg" alt="Nuvana Estudio de Diseño Web - Desarrollo Web Profesional Puerto Rico" className="h-10 w-10 mr-3 rounded-lg" />
-              <span className="text-2xl font-cyber font-bold gradient-text">Nuvana</span>
-            </div>
-            <LanguageToggle />
-          </div>
-        </header>
+        {/* Navigation */}
+        <Navigation />
 
         {/* Main Content */}
         <main className="pt-20">
@@ -64,14 +56,16 @@ export default function SpanishHome() {
           <div id="about">
             <About />
           </div>
-          <Services />
+          <div id="services">
+            <Services />
+          </div>
           <div id="portfolio">
             <Portfolio />
           </div>
           <Testimonials />
           <WhyChooseUs />
           <Blog />
-          <div id="quote">
+          <div id="contact">
             <QuoteForm />
           </div>
         </main>

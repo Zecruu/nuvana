@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../../components/LanguageContext'
+import Navigation from '../../components/Navigation'
 import { blogPosts } from '../../data/blogPosts'
 import { FiCalendar, FiUser, FiClock, FiArrowRight } from 'react-icons/fi'
 
@@ -64,6 +65,9 @@ export default function BlogIndex() {
       </Head>
 
       <div className="min-h-screen bg-dark-bg text-white">
+        {/* Navigation */}
+        <Navigation />
+
         {/* Header */}
         <section className="pt-32 pb-16 px-6">
           <div className="max-w-4xl mx-auto text-center">
@@ -101,25 +105,23 @@ export default function BlogIndex() {
                 >
                   <Link href={`/blog/${post.slug}`}>
                     <div className="glass-effect rounded-2xl overflow-hidden border border-white/10 hover:border-neon/30 transition-all duration-300 h-full cursor-pointer">
-                      {/* Image Placeholder */}
-                      <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/50 to-transparent"></div>
-                        <div className="absolute top-4 left-4">
+                      {/* Content */}
+                      <div className="p-6 relative">
+                        {/* Category Badge */}
+                        <div className="absolute top-4 right-4">
                           <span className="px-3 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary text-xs font-medium">
                             {language === 'es' ? post.categoryEs : post.category}
                           </span>
                         </div>
-                        <div className="absolute bottom-4 right-4">
+
+                        {/* Read Time Badge */}
+                        <div className="absolute top-4 left-4">
                           <span className="px-2 py-1 bg-dark-bg/80 rounded text-xs text-gray-300 flex items-center gap-1">
                             <FiClock className="text-primary" />
                             {language === 'es' ? post.readTimeEs : post.readTime}
                           </span>
                         </div>
-                      </div>
-
-                      {/* Content */}
-                      <div className="p-6">
-                        <div className="flex items-center gap-4 text-sm text-gray-400 mb-3">
+                        <div className="flex items-center gap-4 text-sm text-gray-400 mb-6 mt-12">
                           <div className="flex items-center gap-1">
                             <FiCalendar className="text-primary" />
                             <span>{new Date(post.date).toLocaleDateString()}</span>
@@ -130,17 +132,17 @@ export default function BlogIndex() {
                           </div>
                         </div>
 
-                        <h2 className="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors line-clamp-2">
+                        <h2 className="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors line-clamp-2 leading-tight">
                           {language === 'es' ? post.titleEs : post.title}
                         </h2>
 
-                        <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
+                        <p className="text-gray-300 text-base leading-relaxed mb-8 line-clamp-4">
                           {language === 'es' ? post.excerptEs : post.excerpt}
                         </p>
 
-                        <div className="flex items-center text-primary font-medium text-sm group-hover:text-neon transition-colors">
+                        <div className="flex items-center text-primary font-medium text-base group-hover:text-neon transition-colors">
                           <span>{language === 'es' ? 'Leer Más' : 'Read More'}</span>
-                          <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                          <FiArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </div>
                       </div>
                     </div>
@@ -151,39 +153,7 @@ export default function BlogIndex() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-20 px-6 bg-gradient-to-r from-primary/10 to-secondary/10">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
-                {language === 'es' 
-                  ? '¿Listo para Transformar tu Negocio Online?' 
-                  : 'Ready to Transform Your Business Online?'
-                }
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                {language === 'es'
-                  ? 'Obtén una consulta gratuita y descubre cómo un sitio web bilingüe profesional puede hacer crecer tu negocio globalmente.'
-                  : 'Get a free consultation and discover how a professional bilingual website can grow your business globally.'
-                }
-              </p>
-              <motion.a
-                href="#quote"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-primary transition-all"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {language === 'es' ? 'Solicitar Consulta Gratuita' : 'Get Free Consultation'}
-                <FiArrowRight />
-              </motion.a>
-            </motion.div>
-          </div>
-        </section>
+
       </div>
     </>
   )

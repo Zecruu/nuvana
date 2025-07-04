@@ -34,6 +34,18 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Blog card enhancements */
+.blog-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+}
+
+
+
 .elegant-border {
   position: relative;
   border: 2px solid transparent;

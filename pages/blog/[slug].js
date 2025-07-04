@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../../components/LanguageContext'
+import Navigation from '../../components/Navigation'
 import { blogPosts } from '../../data/blogPosts'
-import LeadMagnet from '../../components/LeadMagnet'
 import { FiCalendar, FiUser, FiClock, FiArrowLeft, FiArrowRight, FiShare2 } from 'react-icons/fi'
 import ReactMarkdown from 'react-markdown'
 
@@ -71,6 +71,9 @@ export default function BlogPost({ post }) {
       </Head>
 
       <div className="min-h-screen bg-dark-bg text-white">
+        {/* Navigation */}
+        <Navigation />
+
         {/* Header */}
         <section className="pt-32 pb-8 px-6">
           <div className="max-w-4xl mx-auto">
@@ -112,19 +115,7 @@ export default function BlogPost({ post }) {
           </div>
         </section>
 
-        {/* Featured Image */}
-        <section className="pb-8 px-6">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              className="relative h-64 md:h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/30 to-transparent"></div>
-            </motion.div>
-          </div>
-        </section>
+
 
         {/* Content */}
         <section className="pb-8 px-6">
@@ -142,53 +133,9 @@ export default function BlogPost({ post }) {
           </div>
         </section>
 
-        {/* Lead Magnet */}
-        <LeadMagnet type="checklist" />
 
-        {/* CTA Section */}
-        <section className="py-16 px-6 bg-gradient-to-r from-primary/10 to-secondary/10">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              className="glass-effect rounded-2xl p-8 text-center border border-white/10"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <h2 className="text-3xl font-bold mb-4 gradient-text">
-                {language === 'es' 
-                  ? '¿Listo para Implementar Estas Estrategias?' 
-                  : 'Ready to Implement These Strategies?'
-                }
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                {language === 'es'
-                  ? 'Obtén una consulta gratuita y descubre cómo podemos ayudarte a crear un sitio web que genere resultados reales para tu negocio.'
-                  : 'Get a free consultation and discover how we can help you create a website that generates real results for your business.'
-                }
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <motion.a
-                  href="#quote"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-primary transition-all"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {language === 'es' ? 'Solicitar Consulta Gratuita' : 'Get Free Consultation'}
-                  <FiArrowRight />
-                </motion.a>
-                <motion.a
-                  href="/blog"
-                  className="inline-flex items-center gap-2 px-8 py-4 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {language === 'es' ? 'Ver Más Artículos' : 'Read More Articles'}
-                </motion.a>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+
+
 
         {/* Share Section */}
         <section className="py-8 px-6 border-t border-white/10">
