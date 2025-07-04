@@ -54,7 +54,7 @@ export default function Home() {
                 "@id": "https://nuvana.com/#website",
                 "url": "https://nuvana.com",
                 "name": "Nuvana Web Design Studio",
-                "description": "Professional website design and development services in Puerto Rico. Custom bilingual websites, e-commerce solutions, and SEO optimization.",
+                "description": "Professional website design and development services in Puerto Rico. Custom bilingual websites, responsive design, and SEO optimization.",
                 "inLanguage": ["en-US", "es-PR"],
                 "potentialAction": {
                   "@type": "SearchAction",
@@ -67,7 +67,7 @@ export default function Home() {
                 "@id": "https://nuvana.com/#business",
                 "name": "Nuvana Web Design Studio",
                 "alternateName": "Nuvana",
-                "description": "Professional website design and development company specializing in custom bilingual websites, e-commerce solutions, and SEO optimization for businesses in Puerto Rico.",
+                "description": "Professional website design and development company specializing in custom bilingual websites, responsive design, and SEO optimization for businesses in Puerto Rico.",
                 "url": "https://nuvana.com",
                 "telephone": "+1-787-123-4567",
                 "email": "nurvanatec@gmail.com",

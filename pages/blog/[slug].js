@@ -1,0 +1,265 @@
+import Head from 'next/head'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { useLanguage } from '../../components/LanguageContext'
+import { blogPosts } from '../../data/blogPosts'
+import LeadMagnet from '../../components/LeadMagnet'
+import { FiCalendar, FiUser, FiClock, FiArrowLeft, FiArrowRight, FiShare2 } from 'react-icons/fi'
+import ReactMarkdown from 'react-markdown'
+
+export default function BlogPost({ post }) {
+  const { language } = useLanguage()
+
+  if (!post) {
+    return <div>Post not found</div>
+  }
+
+  const title = language === 'es' ? post.titleEs : post.title
+  const content = language === 'es' ? post.contentEs : post.content
+  const excerpt = language === 'es' ? post.excerptEs : post.excerpt
+
+  return (
+    <>
+      <Head>
+        <title>{title} | Nuvana Web Design Blog</title>
+        <meta name="description" content={excerpt} />
+        <meta name="keywords" content={(language === 'es' ? post.tagsEs : post.tags).join(', ')} />
+        <link rel="canonical" href={`https://nuvana.com/blog/${post.slug}`} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={excerpt} />
+        <meta property="og:image" content={`https://nuvana.com${post.image}`} />
+        <meta property="og:url" content={`https://nuvana.com/blog/${post.slug}`} />
+        <meta property="og:type" content="article" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={excerpt} />
+        <meta name="twitter:image" content={`https://nuvana.com${post.image}`} />
+        
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": title,
+            "description": excerpt,
+            "image": `https://nuvana.com${post.image}`,
+            "author": {
+              "@type": "Organization",
+              "name": post.author,
+              "url": "https://nuvana.com"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Nuvana Web Design Studio",
+              "url": "https://nuvana.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://nuvana.com/images/Nuvana Logo.jpg"
+              }
+            },
+            "datePublished": post.date,
+            "dateModified": post.date,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://nuvana.com/blog/${post.slug}`
+            }
+          })
+        }} />
+      </Head>
+
+      <div className="min-h-screen bg-dark-bg text-white">
+        {/* Header */}
+        <section className="pt-32 pb-8 px-6">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <Link href="/blog" className="inline-flex items-center gap-2 text-primary hover:text-neon transition-colors mb-8">
+                <FiArrowLeft />
+                {language === 'es' ? 'Volver al Blog' : 'Back to Blog'}
+              </Link>
+              
+              <div className="mb-6">
+                <span className="px-3 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary text-sm font-medium">
+                  {language === 'es' ? post.categoryEs : post.category}
+                </span>
+              </div>
+              
+              <h1 className="text-4xl md:text-5xl font-cyber font-bold mb-6 gradient-text leading-tight">
+                {title}
+              </h1>
+              
+              <div className="flex flex-wrap items-center gap-6 text-gray-400 mb-8">
+                <div className="flex items-center gap-2">
+                  <FiCalendar className="text-primary" />
+                  <span>{new Date(post.date).toLocaleDateString()}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <FiUser className="text-primary" />
+                  <span>{post.author}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <FiClock className="text-primary" />
+                  <span>{language === 'es' ? post.readTimeEs : post.readTime}</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Featured Image */}
+        <section className="pb-8 px-6">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              className="relative h-64 md:h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/30 to-transparent"></div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Content */}
+        <section className="pb-8 px-6">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              className="prose prose-lg prose-invert max-w-none"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <div className="blog-content">
+                <ReactMarkdown>{content}</ReactMarkdown>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Lead Magnet */}
+        <LeadMagnet type="checklist" />
+
+        {/* CTA Section */}
+        <section className="py-16 px-6 bg-gradient-to-r from-primary/10 to-secondary/10">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              className="glass-effect rounded-2xl p-8 text-center border border-white/10"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-3xl font-bold mb-4 gradient-text">
+                {language === 'es' 
+                  ? '¿Listo para Implementar Estas Estrategias?' 
+                  : 'Ready to Implement These Strategies?'
+                }
+              </h2>
+              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                {language === 'es'
+                  ? 'Obtén una consulta gratuita y descubre cómo podemos ayudarte a crear un sitio web que genere resultados reales para tu negocio.'
+                  : 'Get a free consultation and discover how we can help you create a website that generates real results for your business.'
+                }
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <motion.a
+                  href="#quote"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-primary transition-all"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {language === 'es' ? 'Solicitar Consulta Gratuita' : 'Get Free Consultation'}
+                  <FiArrowRight />
+                </motion.a>
+                <motion.a
+                  href="/blog"
+                  className="inline-flex items-center gap-2 px-8 py-4 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {language === 'es' ? 'Ver Más Artículos' : 'Read More Articles'}
+                </motion.a>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Share Section */}
+        <section className="py-8 px-6 border-t border-white/10">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-between">
+              <span className="text-gray-400">
+                {language === 'es' ? 'Compartir este artículo:' : 'Share this article:'}
+              </span>
+              <div className="flex items-center gap-4">
+                <button className="p-2 text-gray-400 hover:text-primary transition-colors">
+                  <FiShare2 />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <style jsx global>{`
+        .blog-content h1 {
+          @apply text-3xl font-bold text-white mb-6 mt-8;
+        }
+        .blog-content h2 {
+          @apply text-2xl font-bold text-white mb-4 mt-6;
+        }
+        .blog-content h3 {
+          @apply text-xl font-bold text-white mb-3 mt-5;
+        }
+        .blog-content p {
+          @apply text-gray-300 mb-4 leading-relaxed;
+        }
+        .blog-content ul, .blog-content ol {
+          @apply text-gray-300 mb-4 pl-6;
+        }
+        .blog-content li {
+          @apply mb-2;
+        }
+        .blog-content strong {
+          @apply text-white font-bold;
+        }
+        .blog-content em {
+          @apply text-primary;
+        }
+        .blog-content blockquote {
+          @apply border-l-4 border-primary pl-4 italic text-gray-300 my-6;
+        }
+      `}</style>
+    </>
+  )
+}
+
+export async function getStaticPaths() {
+  const paths = blogPosts.map((post) => ({
+    params: { slug: post.slug },
+  }))
+
+  return { paths, fallback: false }
+}
+
+export async function getStaticProps({ params }) {
+  const post = blogPosts.find((post) => post.slug === params.slug)
+
+  if (!post) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: {
+      post,
+    },
+  }
+}

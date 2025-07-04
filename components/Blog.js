@@ -1,51 +1,14 @@
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { useLanguage } from './LanguageContext'
-import { FiCalendar, FiUser, FiArrowRight } from 'react-icons/fi'
+import { blogPosts } from '../data/blogPosts'
+import { FiCalendar, FiUser, FiArrowRight, FiClock } from 'react-icons/fi'
 
 export default function Blog() {
-  const { t } = useLanguage()
+  const { language } = useLanguage()
 
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Essential Website Features Every Puerto Rico Business Needs in 2025",
-      titleEs: "Características Esenciales que Todo Negocio en Puerto Rico Necesita en 2025",
-      excerpt: "Discover the must-have website features that will help your Puerto Rico business succeed online, from bilingual support to mobile optimization.",
-      excerptEs: "Descubre las características indispensables que ayudarán a tu negocio en Puerto Rico a triunfar en línea, desde soporte bilingüe hasta optimización móvil.",
-      date: "2025-01-15",
-      author: "Nuvana Team",
-      category: "Web Design",
-      categoryEs: "Diseño Web",
-      image: "/images/blog/website-features-2025.jpg",
-      slug: "essential-website-features-puerto-rico-business-2025"
-    },
-    {
-      id: 2,
-      title: "Why Bilingual Websites Are Crucial for Puerto Rico Businesses",
-      titleEs: "Por Qué los Sitios Web Bilingües Son Cruciales para Negocios en Puerto Rico",
-      excerpt: "Learn how bilingual websites can expand your market reach and improve customer engagement in Puerto Rico's diverse market.",
-      excerptEs: "Aprende cómo los sitios web bilingües pueden expandir tu alcance de mercado y mejorar el compromiso del cliente en el mercado diverso de Puerto Rico.",
-      date: "2025-01-10",
-      author: "Nuvana Team",
-      category: "Digital Marketing",
-      categoryEs: "Marketing Digital",
-      image: "/images/blog/bilingual-websites-puerto-rico.jpg",
-      slug: "bilingual-websites-crucial-puerto-rico-businesses"
-    },
-    {
-      id: 3,
-      title: "SEO Best Practices for Puerto Rico Local Businesses",
-      titleEs: "Mejores Prácticas de SEO para Negocios Locales en Puerto Rico",
-      excerpt: "Master local SEO strategies specifically designed for Puerto Rico businesses to dominate local search results.",
-      excerptEs: "Domina las estrategias de SEO local específicamente diseñadas para negocios en Puerto Rico para dominar los resultados de búsqueda local.",
-      date: "2025-01-05",
-      author: "Nuvana Team",
-      category: "SEO",
-      categoryEs: "SEO",
-      image: "/images/blog/seo-puerto-rico-local-business.jpg",
-      slug: "seo-best-practices-puerto-rico-local-businesses"
-    }
-  ]
+  // Show only the first 3 posts on homepage
+  const featuredPosts = blogPosts.slice(0, 3)
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -111,20 +74,27 @@ export default function Blog() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {blogPosts.map((post) => (
+          {featuredPosts.map((post) => (
             <motion.article
               key={post.id}
               variants={cardVariants}
               className="group relative"
               whileHover={{ y: -8 }}
             >
-              <div className="glass-effect rounded-2xl overflow-hidden border border-white/10 hover:border-neon/30 transition-all duration-300 h-full">
+              <Link href={`/blog/${post.slug}`}>
+                <div className="glass-effect rounded-2xl overflow-hidden border border-white/10 hover:border-neon/30 transition-all duration-300 h-full cursor-pointer">
                 {/* Image */}
                 <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/50 to-transparent"></div>
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary text-xs font-medium">
-                      {post.category}
+                      {language === 'es' ? post.categoryEs : post.category}
+                    </span>
+                  </div>
+                  <div className="absolute bottom-4 right-4">
+                    <span className="px-2 py-1 bg-dark-bg/80 rounded text-xs text-gray-300 flex items-center gap-1">
+                      <FiClock className="text-primary" />
+                      {language === 'es' ? post.readTimeEs : post.readTime}
                     </span>
                   </div>
                 </div>
@@ -142,20 +112,20 @@ export default function Blog() {
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors">
-                    {post.title}
+                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors line-clamp-2">
+                    {language === 'es' ? post.titleEs : post.title}
                   </h3>
 
-                  <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                    {post.excerpt}
+                  <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
+                    {language === 'es' ? post.excerptEs : post.excerpt}
                   </p>
 
                   <div className="flex items-center text-primary font-medium text-sm group-hover:text-neon transition-colors">
-                    <span>Read More</span>
+                    <span>{language === 'es' ? 'Leer Más' : 'Read More'}</span>
                     <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
-              </div>
+              </Link>
             </motion.article>
           ))}
         </motion.div>
