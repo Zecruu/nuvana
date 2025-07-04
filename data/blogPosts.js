@@ -658,26 +658,26 @@ Your business information must be **100% consistent** across:
 ## Advanced Local SEO Tactics
 
 ### 1. **Schema Markup for Local Business**
-```json
+\`\`\`json
 {
   "@type": "LocalBusiness",
   "name": "Your Business Name",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "123 Calle Principal",
-    "addressLocality": "San Juan",
-    "addressRegion": "PR",
-    "postalCode": "00901",
+    "streetAddress": "123 Main Street",
+    "addressLocality": "Your City",
+    "addressRegion": "Your State",
+    "postalCode": "12345",
     "addressCountry": "US"
   },
-  "telephone": "+1-787-123-4567",
+  "telephone": "+1-555-123-4567",
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "18.4655",
-    "longitude": "-66.1057"
+    "latitude": "40.7128",
+    "longitude": "-74.0060"
   }
 }
-```
+\`\`\`
 
 ### 2. **Local Link Building**
 - **Local news websites** (El Nuevo Día, Primera Hora)
