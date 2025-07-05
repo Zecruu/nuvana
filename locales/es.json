@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "headline": "Diseño y Desarrollo Web Profesional Bilingüe",
+    "subheadline": "Sitios web personalizados en inglés, español, o ambos idiomas. Diseño responsivo y optimización SEO para alcanzar mercados globales.",
+    "cta": "Solicita tu Cotización Gratuita"
+  },
+  "about": {
+    "title": "Una Empresa de Diseño Web Como Ninguna Otra",
+    "text": "Nuvana es una empresa comprometida con ver tu negocio triunfar. A diferencia de otras empresas de diseño web que solo construyen sitios web y desaparecen, nosotros realmente nos preocupamos por tu crecimiento y éxito. Nos especializamos en crear sitios web personalizados en inglés, español, o ambos idiomas, con diseños responsivos y soluciones optimizadas para SEO. Nuestra misión no es solo entregar un sitio web—es entregar resultados que transformen tu negocio y te ayuden a alcanzar nuevas alturas."
+  },
+  "services": {
+    "title": "Servicios Profesionales de Diseño Web",
+    "items": [
+      { "title": "Desarrollo de Sitios Web Personalizados", "desc": "Diseño y desarrollo web profesional personalizado para las necesidades de tu negocio e identidad de marca." },
+      { "title": "Diseño Web Responsivo", "desc": "Sitios web responsivos y amigables para móviles que funcionan perfectamente en todos los dispositivos y tamaños de pantalla." },
+      { "title": "SEO y Marketing Digital", "desc": "Optimización para motores de búsqueda y estrategias de marketing digital para aumentar tu visibilidad online y generar tráfico." },
+      { "title": "Soluciones Web Multilingües", "desc": "Desarrollo experto de sitios web en inglés, español, o ambos idiomas para alcanzar mercados globales y audiencias diversas en todo el mundo." }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Por Qué Elegir Nuvana para tu Diseño Web",
+    "reasons": [
+      {
+        "title": "Equipo Experto en Desarrollo Web",
+        "desc": "Nuestros desarrolladores web y diseñadores experimentados crean sitios web de alto rendimiento que generan resultados y aumentan las conversiones para tu negocio."
+      },
+      {
+        "title": "Especialistas en Sitios Web Bilingües",
+        "desc": "Especializados en crear sitios web completamente bilingües que sirven sin problemas tanto a clientes de habla inglesa como española en Puerto Rico y América Latina."
+      },
+      {
+        "title": "Soluciones Web Personalizadas",
+        "desc": "Cada sitio web se construye a medida desde cero para reflejar tu identidad de marca, cumplir tus objetivos comerciales y proporcionar una experiencia de usuario excepcional."
+      },
+      {
+        "title": "Soporte Completo de Sitios Web",
+        "desc": "Mantenimiento integral de sitios web, hosting, actualizaciones de seguridad y optimización continua para asegurar que tu sitio web siga funcionando al máximo."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Descubre nuestro trabajo más reciente y el impacto que hemos creado",
+    "sites": [
+      {
+        "id": "multi-electric",
+        "name": "Multi Electric Supply Inc.",
+        "category": "E-Commerce e Industrial",
+        "desc": "Una transformación digital integral para el distribuidor líder de suministros eléctricos de Puerto Rico, con soporte bilingüe y funcionalidad de grado industrial.",
+        "longDesc": "Multi Electric Supply Inc. necesitaba un sitio web moderno y profesional para mostrar sus más de 20 años de experiencia en suministros eléctricos. Creamos una plataforma bilingüe que sirve tanto a clientes de habla española como inglesa en todo Puerto Rico.",
+        "url": "https://www.multielectricsupply.com/",
+        "img": "/images/MULTI ELECTRCI LOGO_LE_upscale_balanced_x4.jpg",
+        "screenshots": [
+          "/images/multi-electric-home.jpg",
+          "/images/multi-electric-services.jpg",
+          "/images/multi-electric-contact.jpg"
+        ],
+        "technologies": ["HTML5", "CSS3", "JavaScript", "Diseño Responsivo", "SEO", "Integración WhatsApp"],
+        "features": [
+          "Soporte Bilingüe Español/Inglés",
+          "Diseño Responsivo para Móviles",
+          "Integración WhatsApp Business",
+          "Contenido Optimizado para SEO",
+          "Rendimiento de Carga Rápida",
+          "Marca Profesional"
+        ],
+        "stats": {
+          "loadTime": "1.2s",
+          "mobileScore": "98/100",
+          "seoScore": "95/100",
+          "uptime": "99.9%"
+        },
+        "client": "Multi Electric Supply Inc.",
+        "year": "2025",
+        "duration": "3 semanas",
+        "testimonial": "Nuvana transformó completamente nuestra presencia en línea. ¡A nuestros clientes les encanta el nuevo sitio web bilingüe!",
+        "results": [
+          "Más Consultas en Línea",
+          "Mayor Presencia de Marca",
+          "Aumento en Confianza del Cliente"
+        ]
+      },
+      {
+        "id": "pr-decompression",
+        "name": "PR Decompression Centers",
+        "category": "Salud y Medicina",
+        "desc": "Un sitio web médico sofisticado para la clínica premier de quiropráctica y descompresión espinal de Puerto Rico, diseñado para generar confianza y convertir pacientes.",
+        "longDesc": "PR Decompression Centers requería un sitio web médico profesional que estableciera credibilidad y ayudara a los pacientes a entender sus opciones de tratamiento avanzadas. Entregamos una plataforma integral con reserva de citas y soporte multilingüe.",
+        "url": "https://www.prdecompressioncenters.com/",
+        "img": "/images/pr-decompression-centers-logo.png",
+        "screenshots": [
+          "/images/pr-decompression-home.jpg",
+          "/images/pr-decompression-treatments.jpg",
+          "/images/pr-decompression-about.jpg"
+        ],
+        "technologies": ["React", "Next.js", "Tailwind CSS", "SEO Médico", "Cumplimiento HIPAA", "Sistema de Citas"],
+        "features": [
+          "Seguridad de Grado Médico",
+          "Sistema de Reserva de Citas",
+          "Portal de Información de Tratamientos",
+          "Testimonios de Pacientes",
+          "Información de Seguros",
+          "Soporte Multilingüe"
+        ],
+        "stats": {
+          "loadTime": "0.9s",
+          "mobileScore": "99/100",
+          "seoScore": "97/100",
+          "uptime": "99.9%"
+        },
+        "client": "PR Decompression Centers",
+        "year": "2025",
+        "duration": "4 semanas",
+        "testimonial": "El nuevo sitio web ha aumentado significativamente nuestras consultas de pacientes y mejorado nuestra imagen profesional.",
+        "results": [
+          "Más Citas de Pacientes",
+          "Mejor Presencia en Línea",
+          "Credibilidad Médica Mejorada"
+        ]
+      }
+    ]
+  },
+  "quote": {
+    "title": "Solicita una Cotización Gratis",
+    "fields": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "business": "Tipo de Negocio",
+      "budget": "Presupuesto",
+      "language": "Idioma Preferido",
+      "goals": "Objetivos del Sitio Web"
+    },
+    "submit": "Enviar Solicitud"
+  },
+  "footer": {
+    "contact": "Contacto",
+    "company": "Nuvana",
+    "address": "San Juan, Puerto Rico",
+    "email": "nurvanatec@gmail.com",
+    "phone": "+1 (787) 123-4567"
+  }
+}
