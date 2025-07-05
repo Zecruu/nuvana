@@ -10,6 +10,7 @@ import WhyChooseUs from '../components/WhyChooseUs'
 import Blog from '../components/Blog'
 import QuoteForm from '../components/QuoteForm'
 import Footer from '../components/Footer'
+import FloatingChatButton from '../components/FloatingChatButton'
 
 export default function Home() {
   const { t } = useLanguage()
@@ -23,6 +24,11 @@ export default function Home() {
         <meta name="author" content="Nuvana Web Design Studio" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://nuvana.com" />
+
+        {/* Favicon */}
+        <link rel="icon" type="image/jpeg" href="/images/Nuvana Logo.jpg" />
+        <link rel="shortcut icon" type="image/jpeg" href="/images/Nuvana Logo.jpg" />
+        <link rel="apple-touch-icon" href="/images/Nuvana Logo.jpg" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
@@ -173,6 +179,7 @@ export default function Home() {
           </div>
         </main>
         <Footer />
+        <FloatingChatButton />
       </div>
     </>
   )

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../../components/LanguageContext'
 import Navigation from '../../components/Navigation'
+import FloatingChatButton from '../../components/FloatingChatButton'
 import { blogPosts } from '../../data/blogPosts'
 import { FiCalendar, FiUser, FiClock, FiArrowRight } from 'react-icons/fi'
 
@@ -37,7 +38,12 @@ export default function BlogIndex() {
         <meta name="description" content="Expert bilingual web design tips, SEO strategies, and digital marketing insights. Learn how to grow your business online with English and Spanish websites." />
         <meta name="keywords" content="bilingual web design blog, multilingual SEO, digital marketing tips, website optimization, English Spanish websites, mobile design" />
         <link rel="canonical" href="https://nuvana.com/blog" />
-        
+
+        {/* Favicon */}
+        <link rel="icon" type="image/jpeg" href="/images/Nuvana Logo.jpg" />
+        <link rel="shortcut icon" type="image/jpeg" href="/images/Nuvana Logo.jpg" />
+        <link rel="apple-touch-icon" href="/images/Nuvana Logo.jpg" />
+
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -153,7 +159,7 @@ export default function BlogIndex() {
           </div>
         </section>
 
-
+        <FloatingChatButton />
       </div>
     </>
   )

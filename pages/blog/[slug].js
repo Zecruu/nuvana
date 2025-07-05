@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../../components/LanguageContext'
 import Navigation from '../../components/Navigation'
+import FloatingChatButton from '../../components/FloatingChatButton'
 import { blogPosts } from '../../data/blogPosts'
 import { FiCalendar, FiUser, FiClock, FiArrowLeft, FiArrowRight, FiShare2 } from 'react-icons/fi'
 import ReactMarkdown from 'react-markdown'
@@ -25,19 +26,24 @@ export default function BlogPost({ post }) {
         <meta name="description" content={excerpt} />
         <meta name="keywords" content={(language === 'es' ? post.tagsEs : post.tags).join(', ')} />
         <link rel="canonical" href={`https://nuvana.com/blog/${post.slug}`} />
-        
+
+        {/* Favicon */}
+        <link rel="icon" type="image/jpeg" href="/images/Nuvana Logo.jpg" />
+        <link rel="shortcut icon" type="image/jpeg" href="/images/Nuvana Logo.jpg" />
+        <link rel="apple-touch-icon" href="/images/Nuvana Logo.jpg" />
+
         {/* Open Graph */}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={excerpt} />
-        <meta property="og:image" content={`https://nuvana.com${post.image}`} />
+        <meta property="og:image" content="https://nuvana.com/images/Nuvana Logo.jpg" />
         <meta property="og:url" content={`https://nuvana.com/blog/${post.slug}`} />
         <meta property="og:type" content="article" />
-        
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={excerpt} />
-        <meta name="twitter:image" content={`https://nuvana.com${post.image}`} />
+        <meta name="twitter:image" content="https://nuvana.com/images/Nuvana Logo.jpg" />
         
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -183,6 +189,7 @@ export default function BlogPost({ post }) {
           @apply border-l-4 border-primary pl-4 italic text-gray-300 my-6;
         }
       `}</style>
+      <FloatingChatButton />
     </>
   )
 }

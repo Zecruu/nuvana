@@ -1,16 +1,11 @@
 import { motion } from 'framer-motion'
 import { useLanguage } from './LanguageContext'
-import { FiArrowDown, FiStar, FiZap } from 'react-icons/fi'
+import { FiArrowDown } from 'react-icons/fi'
 
 export default function Hero() {
   const { t } = useLanguage()
 
-  const floatingElements = [
-    { icon: FiZap, delay: 0, x: -100, y: -50 },
-    { icon: FiStar, delay: 0.5, x: 100, y: -30 },
-    { icon: FiZap, delay: 1, x: -80, y: 50 },
-    { icon: FiStar, delay: 1.5, x: 120, y: 80 },
-  ]
+
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
@@ -22,39 +17,11 @@ export default function Hero() {
       </div>
 
       {/* Floating Icons */}
-      {floatingElements.map((element, index) => (
-        <motion.div
-          key={index}
-          className="absolute text-neon/30 text-2xl"
-          initial={{ opacity: 0, x: element.x, y: element.y }}
-          animate={{
-            opacity: [0.3, 0.7, 0.3],
-            x: [element.x, element.x + 20, element.x],
-            y: [element.y, element.y - 20, element.y],
-          }}
-          transition={{
-            duration: 4,
-            delay: element.delay,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        >
-          <element.icon />
-        </motion.div>
-      ))}
+
 
       {/* Main Content */}
       <div className="relative z-10 max-w-5xl mx-auto">
-        {/* Badge */}
-        <motion.div
-          className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-8 text-primary text-sm font-medium"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-        >
-          <FiStar className="text-primary" />
-          Premium Web Design Studio
-        </motion.div>
+
 
         {/* Main Headline */}
         <motion.h1
@@ -63,7 +30,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
         >
-          <span className="gradient-text drop-shadow-elegant">
+          <span className="text-white">
             {t.hero.headline}
           </span>
         </motion.h1>
