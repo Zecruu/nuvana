@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "headline": "Custom Websites Built in Puerto Rico",
+    "subheadline": "Fully bilingual, beautifully designed, SEO ready.",
+    "cta": "Get Your Free Quote"
+  },
+  "about": {
+    "title": "About Nuvana",
+    "text": "Nuvana creates stunning, custom websites for businesses of all sizes and industries. We empower your brand with expert web design and SEO solutions tailored to your unique vision. As a fully bilingual team, we're equipped to help you reach diverse markets and achieve your digital goals."
+  },
+  "services": {
+    "title": "Our Services",
+    "items": [
+      { "title": "Custom Web Design", "desc": "Unique, modern websites tailored to your brand." },
+      { "title": "SEO Optimization", "desc": "Rank higher and get found by your customers." },
+      { "title": "Hosting & Maintenance", "desc": "Fast, secure hosting and ongoing support." },
+      { "title": "Responsive & Bilingual Sites", "desc": "Seamless experience in English and Spanish." }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "reasons": [
+      {
+        "title": "Website Expertise",
+        "desc": "We understand what makes a website effective, creating designs that engage visitors and convert them into customers."
+      },
+      {
+        "title": "Bilingual Excellence",
+        "desc": "Fully bilingual websites that seamlessly switch between English and Spanish for maximum reach."
+      },
+      {
+        "title": "Custom Solutions",
+        "desc": "Every website is built from scratch to match your brand's unique identity and business goals."
+      },
+      {
+        "title": "Ongoing Support",
+        "desc": "We don't just build and leave - we provide continuous support to ensure your website evolves with your business."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Our Work",
+    "sites": [
+      {
+        "name": "Multi Electric Supply",
+        "desc": "Website for a leading electrical supply distributor in Puerto Rico.",
+        "url": "https://www.multielectricsupply.com/",
+        "img": "/images/MULTI ELECTRCI LOGO_LE_upscale_balanced_x4.jpg"
+      },
+      {
+        "name": "PR Decompression Centers",
+        "desc": "Medical site for the biggest chiropractic and decompression clinic in Puerto Rico.",
+        "url": "https://www.prdecompressioncenters.com/en",
+        "img": "/images/pr-decompression-centers-logo.png"
+      }
+    ]
+  },
+  "quote": {
+    "title": "Request a Free Quote",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "business": "Business Type",
+      "budget": "Budget",
+      "language": "Language Preference",
+      "goals": "Website Goals"
+    },
+    "submit": "Send Request"
+  },
+  "footer": {
+    "contact": "Contact",
+    "company": "Nuvana",
+    "address": "San Juan, Puerto Rico",
+    "email": "nurvanatec@gmail.com",
+    "phone": "+1 (787) 123-4567"
+  }
+}

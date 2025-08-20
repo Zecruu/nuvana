@@ -1,0 +1,68 @@
+# Robots.txt for Nuvana - Best Website Builder 2024
+# https://nuvana.com
+
+User-agent: *
+Allow: /
+
+# Priority crawling for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 0
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 1
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/static/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid*
+Disallow: /*?*gclid*
+
+# Allow important resources
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /_next/static/css/
+Allow: /_next/static/js/
+Allow: /sitemap*.xml
+Allow: /robots.txt
+
+# Sitemap locations
+Sitemap: https://nuvana.com/sitemap.xml
+Sitemap: https://nuvana.com/sitemap-es.xml
+
+# Host directive
+Host: https://nuvana.com

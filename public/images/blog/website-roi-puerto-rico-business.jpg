@@ -1,0 +1,48 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#5200ff;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#grad1)"/>
+  
+  <!-- Chart/Graph representation -->
+  <rect x="150" y="250" width="500" height="100" fill="#ffffff" opacity="0.1" stroke="url(#grad2)" stroke-width="2"/>
+  
+  <!-- Bar chart bars -->
+  <rect x="180" y="300" width="40" height="30" fill="url(#grad2)" opacity="0.6"/>
+  <rect x="240" y="280" width="40" height="50" fill="url(#grad2)" opacity="0.7"/>
+  <rect x="300" y="260" width="40" height="70" fill="url(#grad2)" opacity="0.8"/>
+  <rect x="360" y="240" width="40" height="90" fill="url(#grad2)" opacity="0.9"/>
+  <rect x="420" y="220" width="40" height="110" fill="url(#grad2)"/>
+  <rect x="480" y="200" width="40" height="130" fill="url(#grad2)"/>
+  <rect x="540" y="180" width="40" height="150" fill="url(#grad2)"/>
+  
+  <!-- Arrow pointing up -->
+  <path d="M 600 280 L 650 230" stroke="url(#grad2)" stroke-width="4" marker-end="url(#arrowhead)" opacity="0.8"/>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="url(#grad2)" opacity="0.8"/>
+    </marker>
+  </defs>
+  
+  <!-- Dollar sign -->
+  <text x="700" y="200" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#00d4ff">$</text>
+  
+  <!-- ROI percentage -->
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#00d4ff">ROI</text>
+  <text x="400" y="150" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff" opacity="0.8">Return on Investment</text>
+  
+  <!-- Title -->
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff" opacity="0.8">Website ROI for Business</text>
+</svg>

@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "headline": "Professional Bilingual Website Design & Development",
+    "subheadline": "Custom websites in English, Spanish, or both languages. Responsive design and SEO optimization to reach global markets.",
+    "cta": "Get Your Free Website Quote"
+  },
+  "about": {
+    "title": "A Web Design Company Like No Other",
+    "text": "Nuvana is a company committed to seeing your business succeed. Unlike other web design companies that just build websites and disappear, we genuinely care about your growth and success. We specialize in creating custom websites in English, Spanish, or both languages, with responsive designs and SEO-optimized solutions. Our mission isn't just to deliver a website—it's to deliver results that transform your business and help you reach new heights."
+  },
+  "services": {
+    "title": "Professional Website Design Services",
+    "items": [
+      { "title": "Custom Website Development", "desc": "Professional custom website design and development tailored to your business needs and brand identity." },
+      { "title": "Responsive Web Design", "desc": "Mobile-friendly responsive websites that work perfectly on all devices and screen sizes for optimal user experience." },
+      { "title": "SEO & Digital Marketing", "desc": "Search engine optimization and digital marketing strategies to increase your online visibility and drive traffic." },
+      { "title": "Multilingual Website Solutions", "desc": "Expert website development in English, Spanish, or both languages to reach global markets and diverse audiences worldwide." }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Nuvana for Your Website Design",
+    "reasons": [
+      {
+        "title": "Expert Website Development Team",
+        "desc": "Our experienced web developers and designers create high-performance websites that drive results and increase conversions for your business."
+      },
+      {
+        "title": "Bilingual Website Specialists",
+        "desc": "Specialized in creating fully bilingual websites that seamlessly serve both English and Spanish-speaking customers across Puerto Rico and Latin America."
+      },
+      {
+        "title": "Custom Website Solutions",
+        "desc": "Every website is custom-built from the ground up to reflect your brand identity, meet your business objectives, and provide exceptional user experience."
+      },
+      {
+        "title": "Complete Website Support",
+        "desc": "Comprehensive website maintenance, hosting, security updates, and ongoing optimization to ensure your website continues to perform at its best."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Featured Projects",
+    "subtitle": "Discover our latest work and the impact we've created",
+    "sites": [
+      {
+        "id": "multi-electric",
+        "name": "Multi Electric Supply Inc.",
+        "category": "E-Commerce & Industrial",
+        "desc": "A comprehensive digital transformation for Puerto Rico's leading electrical supply distributor, featuring bilingual support and industrial-grade functionality.",
+        "longDesc": "Multi Electric Supply Inc. needed a modern, professional website to showcase their 20+ years of expertise in electrical supplies. We created a bilingual platform that serves both Spanish and English-speaking customers across Puerto Rico.",
+        "url": "https://www.multielectricsupply.com/",
+        "img": "/images/MULTI ELECTRCI LOGO_LE_upscale_balanced_x4.jpg",
+        "screenshots": [
+          "/images/multi-electric-home.jpg",
+          "/images/multi-electric-services.jpg",
+          "/images/multi-electric-contact.jpg"
+        ],
+        "technologies": ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO", "WhatsApp Integration"],
+        "features": [
+          "Bilingual Spanish/English Support",
+          "Mobile-Responsive Design",
+          "WhatsApp Business Integration",
+          "SEO Optimized Content",
+          "Fast Loading Performance",
+          "Professional Branding"
+        ],
+        "stats": {
+          "loadTime": "1.2s",
+          "mobileScore": "98/100",
+          "seoScore": "95/100",
+          "uptime": "99.9%"
+        },
+        "client": "Multi Electric Supply Inc.",
+        "year": "2025",
+        "duration": "3 weeks",
+        "testimonial": "Nuvana transformed our online presence completely. Our customers love the new bilingual website!",
+        "results": [
+          "More Online Inquiries",
+          "Enhanced Brand Presence",
+          "Increased Customer Trust"
+        ]
+      },
+      {
+        "id": "pr-decompression",
+        "name": "PR Decompression Centers",
+        "category": "Healthcare & Medical",
+        "desc": "A sophisticated medical website for Puerto Rico's premier chiropractic and spinal decompression clinic, designed to build trust and convert patients.",
+        "longDesc": "PR Decompression Centers required a professional medical website that would establish credibility and help patients understand their advanced treatment options. We delivered a comprehensive platform with appointment booking and multilingual support.",
+        "url": "https://www.prdecompressioncenters.com/",
+        "img": "/images/pr-decompression-centers-logo.png",
+        "screenshots": [
+          "/images/pr-decompression-home.jpg",
+          "/images/pr-decompression-treatments.jpg",
+          "/images/pr-decompression-about.jpg"
+        ],
+        "technologies": ["React", "Next.js", "Tailwind CSS", "Medical SEO", "HIPAA Compliance", "Appointment System"],
+        "features": [
+          "Medical-Grade Security",
+          "Appointment Booking System",
+          "Treatment Information Portal",
+          "Patient Testimonials",
+          "Insurance Information",
+          "Multilingual Support"
+        ],
+        "stats": {
+          "loadTime": "0.9s",
+          "mobileScore": "99/100",
+          "seoScore": "97/100",
+          "uptime": "99.9%"
+        },
+        "client": "PR Decompression Centers",
+        "year": "2025",
+        "duration": "4 weeks",
+        "testimonial": "The new website has significantly increased our patient inquiries and improved our professional image.",
+        "results": [
+          "More Patient Appointments",
+          "Improved Online Presence",
+          "Enhanced Medical Credibility"
+        ]
+      }
+    ]
+  },
+  "quote": {
+    "title": "Request a Free Quote",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "business": "Business Type",
+      "budget": "Budget",
+      "language": "Language Preference",
+      "goals": "Website Goals"
+    },
+    "submit": "Send Request"
+  },
+  "footer": {
+    "contact": "Contact",
+    "company": "Nuvana",
+    "address": "San Juan, Puerto Rico",
+    "email": "nurvanatec@gmail.com",
+    "phone": "+1 (787) 123-4567"
+  }
+}
