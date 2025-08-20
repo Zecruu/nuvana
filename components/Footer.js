@@ -1,15 +1,10 @@
 import { useLanguage } from './LanguageContext'
 import { motion } from 'framer-motion'
-import { FiMail, FiMapPin, FiPhone, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { FiMail, FiMapPin } from 'react-icons/fi'
 
 export default function Footer() {
   const { t } = useLanguage()
 
-  const socialLinks = [
-    { icon: FiGithub, href: '#', label: 'GitHub' },
-    { icon: FiLinkedin, href: '#', label: 'LinkedIn' },
-    { icon: FiTwitter, href: '#', label: 'Twitter' },
-  ]
 
   return (
     <footer className="relative overflow-hidden bg-gradient-to-br from-dark-bg to-dark-card border-t border-white/10">
@@ -36,20 +31,6 @@ export default function Footer() {
             <p className="text-gray-400 leading-relaxed mb-6">
               Creating stunning, bilingual websites that drive results for businesses across Puerto Rico and beyond.
             </p>
-            <div className="flex gap-4 justify-center md:justify-start">
-              {socialLinks.map((social, index) => (
-                <motion.a
-                  key={index}
-                  href={social.href}
-                  className="w-10 h-10 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center text-primary hover:shadow-primary transition-all"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  aria-label={social.label}
-                >
-                  <social.icon className="text-lg" />
-                </motion.a>
-              ))}
-            </div>
           </motion.div>
 
           {/* Contact Info */}
@@ -71,10 +52,6 @@ export default function Footer() {
                 <a href="mailto:nurvanatec@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
                   {t.footer.email}
                 </a>
-              </div>
-              <div className="flex items-center justify-center md:justify-start gap-3">
-                <FiPhone className="text-primary" />
-                <span className="text-gray-400">{t.footer.phone}</span>
               </div>
             </div>
           </motion.div>
