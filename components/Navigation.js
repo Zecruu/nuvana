@@ -83,15 +83,15 @@ export default function Navigation() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-white/10">
-      <div className="flex justify-between items-center p-6 max-w-7xl mx-auto">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-secondary/90 backdrop-blur-lg border-b border-dark-border/70">
+      <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
         {/* Logo */}
         <Link href={language === 'es' ? '/espanol' : '/'}>
           <div className="flex items-center cursor-pointer">
             <img 
               src="/images/Nuvana Logo.jpg" 
               alt={language === 'es' ? 'Nuvana Estudio de Diseño Web' : 'Nuvana Web Design Studio'} 
-              className="h-10 w-10 mr-3 rounded-lg" 
+              className="h-10 w-10 mr-3 rounded-lg border border-dark-border/60" 
             />
             <span className="text-2xl font-cyber font-bold gradient-text">Nuvana</span>
           </div>
@@ -103,7 +103,7 @@ export default function Navigation() {
             <Link key={item.id} href={item.href}>
               <span 
                 onClick={() => handleNavClick(item.href, item.id)}
-                className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer font-medium"
+                className="text-text-secondary hover:text-primary transition-colors duration-300 cursor-pointer font-medium uppercase tracking-wide"
               >
                 {item.name}
               </span>
@@ -117,7 +117,7 @@ export default function Navigation() {
           <LanguageToggle />
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-gray-300 hover:text-primary transition-colors duration-300"
+            className="text-text-secondary hover:text-primary transition-colors duration-300"
           >
             {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
@@ -131,14 +131,14 @@ export default function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass-effect border-t border-white/10"
+            className="md:hidden bg-secondary-light/95 border-t border-dark-border/70"
           >
             <nav className="px-6 py-4 space-y-4">
               {navItems.map((item) => (
                 <Link key={item.id} href={item.href}>
                   <div 
                     onClick={() => handleNavClick(item.href, item.id)}
-                    className="block text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer font-medium py-2"
+                    className="block text-text-secondary hover:text-primary transition-colors duration-300 cursor-pointer font-medium py-2 uppercase tracking-wide"
                   >
                     {item.name}
                   </div>

@@ -2,7 +2,14 @@
   "hero": {
     "headline": "Diseño y Desarrollo Web Profesional Bilingüe",
     "subheadline": "Sitios web personalizados en inglés, español, o ambos idiomas. Diseño responsivo y optimización SEO para alcanzar mercados globales.",
-    "cta": "Solicita tu Cotización Gratuita"
+    "cta": "Solicita tu Cotización Gratuita",
+    "secondaryCta": "Ver Nuestro Trabajo",
+    "scroll": "Desliza para explorar",
+    "stats": {
+      "projects": "Proyectos Completados",
+      "customers": "Clientes Felices",
+      "support": "Soporte Disponible"
+    }
   },
   "about": {
     "title": "Una Empresa de Diseño Web Como Ninguna Otra",
@@ -10,11 +17,40 @@
   },
   "services": {
     "title": "Servicios Profesionales de Diseño Web",
+    "subtitle": "Soluciones digitales integrales adaptadas a las necesidades de tu negocio",
+    "learnMore": "Ver Más",
+    "ctaNotice": "¿Necesitas una solución personalizada? Te respaldamos.",
+    "ctaButton": "Habla con Nosotros",
     "items": [
       { "title": "Desarrollo de Sitios Web Personalizados", "desc": "Diseño y desarrollo web profesional personalizado para las necesidades de tu negocio e identidad de marca." },
       { "title": "Diseño Web Responsivo", "desc": "Sitios web responsivos y amigables para móviles que funcionan perfectamente en todos los dispositivos y tamaños de pantalla." },
       { "title": "SEO y Marketing Digital", "desc": "Optimización para motores de búsqueda y estrategias de marketing digital para aumentar tu visibilidad online y generar tráfico." },
       { "title": "Soluciones Web Multilingües", "desc": "Desarrollo experto de sitios web en inglés, español, o ambos idiomas para alcanzar mercados globales y audiencias diversas en todo el mundo." }
+    ]
+  },
+  "blog": {
+    "label": "Últimos Insights",
+    "title": "Insights de Diseño Web y SEO",
+    "subtitle": "Consejos y estrategias expertos para construir sitios web exitosos en Puerto Rico",
+    "readMore": "Leer Más",
+    "viewAll": "Ver Todos los Artículos"
+  },
+  "testimonials": {
+    "title": "Historias de Éxito de Clientes",
+    "subtitle": "No solo confíes en nuestra palabra: escucha lo que nuestros clientes dicen de su experiencia",
+    "ctaNotice": "¿Listo para unirte a nuestras historias de éxito?",
+    "ctaButton": "Comienza tu Historia de Éxito",
+    "items": [
+      {
+        "name": "Multi Electric Supply Inc.",
+        "role": "Distribuidor de Suministros Eléctricos",
+        "content": "Nuvana transformó por completo nuestra presencia en línea. A nuestros clientes les encanta el nuevo sitio web bilingüe y nuestras consultas en línea aumentaron un 40%."
+      },
+      {
+        "name": "PR Decompression Centers",
+        "role": "Proveedor de Servicios de Salud",
+        "content": "El nuevo sitio web ha incrementado significativamente nuestras consultas de pacientes y mejorado nuestra imagen profesional. ¡Excelente trabajo del equipo de Nuvana!"
+      }
     ]
   },
   "whyChooseUs": {
@@ -41,6 +77,17 @@
   "portfolio": {
     "title": "Proyectos Destacados",
     "subtitle": "Descubre nuestro trabajo más reciente y el impacto que hemos creado",
+    "techTitle": "Tecnologías Utilizadas",
+    "resultsTitle": "Resultados Clave",
+    "ctaNotice": "¿Listo para crear algo increíble juntos?",
+    "ctaButton": "Inicia tu Proyecto",
+    "visit": "Ver Sitio en Vivo",
+    "stats": {
+      "loadTime": "Tiempo de Carga",
+      "mobileScore": "Puntaje Móvil",
+      "seoScore": "Puntaje SEO",
+      "uptime": "Disponibilidad"
+    },
     "sites": [
       {
         "id": "multi-electric",
@@ -130,13 +177,40 @@
       "language": "Idioma Preferido",
       "goals": "Objetivos del Sitio Web"
     },
-    "submit": "Enviar Solicitud"
+    "submit": "Enviar Solicitud",
+    "sending": "Enviando...",
+    "success": "¡Gracias! Nos pondremos en contacto pronto.",
+    "errors": {
+      "spam": "Spam detectado.",
+      "tooFast": "Por favor, tómate un momento antes de enviar.",
+      "invalidEmail": "Por favor, ingresa un correo electrónico válido.",
+      "nameRequired": "El nombre es requerido.",
+      "goalsRequired": "Los objetivos del sitio web son requeridos.",
+      "verificationRequired": "Completa la verificación.",
+      "verificationFailed": "La verificación falló, intenta de nuevo.",
+      "verificationError": "Error de verificación, intenta de nuevo.",
+      "unknown": "Error al enviar. Inténtalo de nuevo.",
+      "validation": "Error de validación. Verifica que todos los campos estén completos.",
+      "invalidRequest": "Solicitud inválida. Por favor, intenta de nuevo.",
+      "accessDenied": "Acceso denegado. Contacta al soporte."
+    }
+  },
+  "floatingChat": {
+    "button": "Solicitar Cotización",
+    "tooltip": "Solicitar una Cotización"
   },
   "footer": {
-    "contact": "Contacto",
     "company": "Nuvana",
     "address": "San Juan, Puerto Rico",
     "email": "nurvanatec@gmail.com",
-    "phone": "+1 (787) 123-4567"
+    "phone": "+1 (787) 123-4567",
+    "contactInfo": "Información de Contacto",
+    "quickLinks": "Enlaces Rápidos",
+    "aboutLink": "Sobre Nosotros",
+    "workLink": "Nuestro Trabajo",
+    "quoteLink": "Obtén Cotización",
+    "privacyLink": "Política de Privacidad",
+    "madeWith": "Hecho con ❤️ en Puerto Rico.",
+    "rights": "Todos los derechos reservados."
   }
 }

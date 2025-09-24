@@ -27,7 +27,7 @@ export function LanguageProvider({ children }) {
 
   const t = translations[lang]
   return (
-    <LanguageContext.Provider value={{ lang, setLang: updateLang, t, isClient }}>
+    <LanguageContext.Provider value={{ lang, language: lang, setLang: updateLang, t, isClient }}>
       {children}
     </LanguageContext.Provider>
   )

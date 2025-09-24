@@ -2,7 +2,14 @@
   "hero": {
     "headline": "Professional Bilingual Website Design & Development",
     "subheadline": "Custom websites in English, Spanish, or both languages. Responsive design and SEO optimization to reach global markets.",
-    "cta": "Get Your Free Website Quote"
+    "cta": "Get Your Free Website Quote",
+    "secondaryCta": "View Our Work",
+    "scroll": "Scroll to explore",
+    "stats": {
+      "projects": "Projects Completed",
+      "customers": "Happy Customers",
+      "support": "Support Available"
+    }
   },
   "about": {
     "title": "A Web Design Company Like No Other",
@@ -10,11 +17,40 @@
   },
   "services": {
     "title": "Professional Website Design Services",
+    "subtitle": "Comprehensive digital solutions tailored to your business needs",
+    "learnMore": "Learn More",
+    "ctaNotice": "Need a custom solution? We've got you covered.",
+    "ctaButton": "Discuss Your Project",
     "items": [
       { "title": "Custom Website Development", "desc": "Professional custom website design and development tailored to your business needs and brand identity." },
       { "title": "Responsive Web Design", "desc": "Mobile-friendly responsive websites that work perfectly on all devices and screen sizes for optimal user experience." },
       { "title": "SEO & Digital Marketing", "desc": "Search engine optimization and digital marketing strategies to increase your online visibility and drive traffic." },
       { "title": "Multilingual Website Solutions", "desc": "Expert website development in English, Spanish, or both languages to reach global markets and diverse audiences worldwide." }
+    ]
+  },
+  "blog": {
+    "label": "Latest Insights",
+    "title": "Web Design & SEO Insights",
+    "subtitle": "Expert tips and strategies for building successful websites in Puerto Rico",
+    "readMore": "Read More",
+    "viewAll": "View All Articles"
+  },
+  "testimonials": {
+    "title": "Client Success Stories",
+    "subtitle": "Don't just take our word for it - hear what our clients have to say about their experience",
+    "ctaNotice": "Ready to join our success stories?",
+    "ctaButton": "Start Your Success Story",
+    "items": [
+      {
+        "name": "Multi Electric Supply Inc.",
+        "role": "Electrical Supply Distributor",
+        "content": "Nuvana transformed our online presence completely. Our customers love the new bilingual website and our online inquiries increased by 40%!"
+      },
+      {
+        "name": "PR Decompression Centers",
+        "role": "Healthcare Provider",
+        "content": "The new website has significantly increased our patient inquiries and improved our professional image. Excellent work by the Nuvana team!"
+      }
     ]
   },
   "whyChooseUs": {
@@ -41,6 +77,17 @@
   "portfolio": {
     "title": "Featured Projects",
     "subtitle": "Discover our latest work and the impact we've created",
+    "techTitle": "Technologies Used",
+    "resultsTitle": "Key Results",
+    "ctaNotice": "Ready to create something amazing together?",
+    "ctaButton": "Start Your Project",
+    "visit": "Visit Live Site",
+    "stats": {
+      "loadTime": "Load Time",
+      "mobileScore": "Mobile Score",
+      "seoScore": "SEO Score",
+      "uptime": "Uptime"
+    },
     "sites": [
       {
         "id": "multi-electric",
@@ -130,13 +177,41 @@
       "language": "Language Preference",
       "goals": "Website Goals"
     },
-    "submit": "Send Request"
+    "submit": "Send Request",
+    "sending": "Sending...",
+    "success": "Thank you! We'll be in touch soon.",
+    "errors": {
+      "spam": "Spam detected.",
+      "tooFast": "Please take a moment before submitting.",
+      "invalidEmail": "Please enter a valid email.",
+      "nameRequired": "Name is required.",
+      "goalsRequired": "Website goals are required.",
+      "verificationRequired": "Complete the verification.",
+      "verificationFailed": "Verification failed, try again.",
+      "verificationError": "Verification error, try again.",
+      "unknown": "Error sending. Please try again.",
+      "validation": "Validation error. Please check that all fields are complete.",
+      "invalidRequest": "Invalid request. Please try again.",
+      "accessDenied": "Access denied. Please contact support."
+    }
+  },
+  "floatingChat": {
+    "button": "Get Quote",
+    "tooltip": "Request a Quote"
   },
   "footer": {
     "contact": "Contact",
     "company": "Nuvana",
     "address": "San Juan, Puerto Rico",
     "email": "nurvanatec@gmail.com",
-    "phone": "+1 (787) 123-4567"
+    "phone": "+1 (787) 123-4567",
+    "contactInfo": "Contact Info",
+    "quickLinks": "Quick Links",
+    "aboutLink": "About Us",
+    "workLink": "Our Work",
+    "quoteLink": "Get Quote",
+    "privacyLink": "Privacy Policy",
+    "madeWith": "Made with ❤️ in Puerto Rico.",
+    "rights": "All rights reserved."
   }
 }
