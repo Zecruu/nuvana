@@ -34,6 +34,24 @@ export default function CookieConsent() {
     }
   }, [])
 
+  // Expose a simple API to open cookie settings from anywhere (e.g., footer link)
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    window.NuvanaCookie = {
+      open: () => {
+        setShowBanner(true)
+        setShowSettings(true)
+      },
+      reset: () => {
+        localStorage.removeItem('cookie-consent')
+        localStorage.removeItem('cookie-consent-date')
+        setShowBanner(true)
+        setShowSettings(true)
+      }
+    }
+    return () => { delete window.NuvanaCookie }
+  }, [])
+
   const loadScripts = (prefs) => {
     // Load Google Analytics if analytics cookies are accepted
     if (prefs.analytics && typeof window !== 'undefined') {

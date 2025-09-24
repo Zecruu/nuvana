@@ -69,6 +69,8 @@ export default function Footer() {
               <a href="#about" className="block text-gray-400 hover:text-primary transition-colors">About Us</a>
               <a href="#portfolio" className="block text-gray-400 hover:text-primary transition-colors">Our Work</a>
               <a href="#quote" className="block text-gray-400 hover:text-primary transition-colors">Get Quote</a>
+              <a href="/cookie-policy" className="block text-gray-400 hover:text-primary transition-colors">Cookie Policy</a>
+              <button type="button" onClick={() => window?.NuvanaCookie?.open?.()} className="block text-left w-full text-gray-400 hover:text-primary transition-colors">Cookie Settings</button>
               <a href="#" className="block text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
             </div>
           </motion.div>
