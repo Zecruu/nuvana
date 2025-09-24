@@ -94,13 +94,20 @@ export default function QuoteForm() {
 
     try {
       // Prepare comprehensive template parameters for contact email
+      // Include both generic keys (name, email, language) and EmailJS-friendly keys
+      // to match whatever the EmailJS templates are expecting.
       const contactParams = {
         to_email: 'nurvanatec@gmail.com',
+        // Common template variables
+        name: name.trim(),
+        email: email.trim(),
+        language: formData.get('language') || 'English',
+        // Additional aliases used previously
         from_name: name.trim(),
         from_email: email.trim(),
+        preferred_language: formData.get('language') || 'English',
         business: formData.get('business')?.trim() || 'Not specified',
         budget: formData.get('budget')?.trim() || 'Not specified',
-        preferred_language: formData.get('language') || 'English',
         message: message.trim(),
         reply_to: email.trim()
       }
@@ -109,24 +116,27 @@ export default function QuoteForm() {
 
       // Send contact form using send method with proper parameters
       const result = await emailjs.send(
-        'service_fn20j9k', 
-        'template_el7imut', 
+        'service_fn20j9k',
+        'template_el7imut',
         contactParams,
         'h67XnrewvXTkQZLJM'
       )
       console.log('Contact email sent successfully:', result)
 
       // Send auto-reply to customer with proper parameters
+      // Provide both `name`/`email` and `to_name`/`to_email` to satisfy template variables.
       const autoReplyParams = {
+        name: name.trim(),
+        email: email.trim(),
         to_name: name.trim(),
         to_email: email.trim(),
         from_name: 'Nuvana Team',
         reply_to: 'nurvanatec@gmail.com'
       }
-      
+
       const autoReply = await emailjs.send(
-        'service_fn20j9k', 
-        'template_iklgsca', 
+        'service_fn20j9k',
+        'template_iklgsca',
         autoReplyParams,
         'h67XnrewvXTkQZLJM'
       )
